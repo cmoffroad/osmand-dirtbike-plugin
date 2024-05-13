@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderingStyle name="Dirtbike by julcnx" depends="" version="1">
+
+  <!-- PROPERTY - CONTOUR LINES -->
+  <renderingProperty attr="contourLines" name="Show contour lines" description="Select minimum zoom level to display in map if available. Separate contour file may be needed." type="string" possibleValues="disabled,16,15,14,13,12,11" defaultValueDescription="default13" category="details"/>
+  <renderingProperty attr="contourColorScheme" name="Contour lines color scheme" description="Contour lines color scheme" type="string" possibleValues="brown" defaultValueDescription="default"/>
+  <renderingProperty attr="contourWidth" name="Contour lines width" description="Contour lines width" type="string" possibleValues="thin,medium,thick" defaultValueDescription="default"/>
+  <renderingProperty attr="contourDensity" name="Contour lines density" description="Contour lines density" type="string" possibleValues="low,medium_w,high" defaultValueDescription="default"/>
+
+  <renderingProperty attr="hideLanduse" name="Hide Landuse Features" description=""
+    type="boolean" possibleValues="" category="hide"/>
+
+  <renderingProperty attr="hideWater" name="Hide Water" description=""
+    type="boolean" possibleValues="" category="hide"/>
+
+  <renderingProperty attr="hideContour" name="Hide Contour" description=""
+    type="boolean" possibleValues="" category="hide"/>
+
+  <renderingProperty attr="hideBoundaries" name="Hide Boundaries" description=""
+    type="boolean" possibleValues="" category="hide"/>
+
+  <renderingProperty attr="hideRoads" name="Hide Roads" description=""
+    type="boolean" possibleValues="" category="hide"/>
+
+  <renderingProperty attr="hideTexts" name="Hide Text" description=""
+    type="boolean" possibleValues="" category="hide"/>
+
+  <renderingProperty attr="hidePOIs" name="Hide POIs" description=""
+    type="boolean" possibleValues="" category="hide"/>
+
+  <renderingProperty attr="hidePeaks" name="Hide Peaks" description=""
+    type="boolean" possibleValues="" category="hide"/>
+
+  <renderingProperty attr="hideRailway" name="Hide Railway" description=""
+    type="boolean" possibleValues="" category="hide"/>
+
+  <renderingProperty attr="groundSurveyMode" name="Ground Survey Mode" description=""
+    type="boolean" possibleValues="" category="details" defaultValue="true" />
+
+  <renderingProperty attr="detailedColors" name="Detailed Colors" description=""
+    type="boolean" possibleValues="" category="details"/>
+
+  <renderingProperty attr="engine_v1" type="boolean"/>
+
+
+  <renderingAttribute name="osmcBlackColor">
+    <case engine_v1="true" attrColorValue="#75000000"/>
+    <case attrColorValue="#44000000"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcBlueColor">
+    <case engine_v1="true" attrColorValue="#750000ff"/>
+    <case attrColorValue="#440000ff"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcGreenColor">
+    <case engine_v1="true" attrColorValue="#7500ff00"/>
+    <case attrColorValue="#4400ff00"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcRedColor">
+    <case engine_v1="true" attrColorValue="#75ff0000"/>
+    <case attrColorValue="#44ff0000"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcYellowColor">
+    <case engine_v1="true" attrColorValue="#75ffff00"/>
+    <case attrColorValue="#44ffff00"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcOrangeColor">
+    <case engine_v1="true" attrColorValue="#88ffba00"/>
+    <case attrColorValue="#66ffba00"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcBrownColor">
+    <case engine_v1="true" attrColorValue="#75705409"/>
+    <case attrColorValue="#44705409"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcPurpleColor">
+    <case engine_v1="true" attrColorValue="#75ab00d6"/>
+    <case attrColorValue="#44ab00d6"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcDefaultColor">
+    <case engine_v1="true" attrColorValue="#750058a2"/>
+    <case attrColorValue="#280058a2"/>
+  </renderingAttribute>
+
+  <renderingAttribute name="osmcRedTextColor">
+    <case attrColorValue="#FF0000"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcBrownTextColor">
+    <case attrColorValue="#775200"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcOrangeTextColor">
+    <case attrColorValue="#EE9D00"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcDarkyellowTextColor">
+    <case attrColorValue="#8C9800"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcYellowTextColor">
+    <case attrColorValue="#F0E600"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcLightgreenTextColor">
+    <case attrColorValue="#C5FF7A"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcGreenTextColor">
+    <case attrColorValue="#00DE02"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcLightblueTextColor">
+    <case attrColorValue="#6FC8FA"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcBlueTextColor">
+    <case attrColorValue="#3B00FF"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcPurpleTextColor">
+    <case attrColorValue="#CC00FF"/>
+  </renderingAttribute>
+  <renderingAttribute name="osmcGrayTextColor">
+    <case attrColorValue="#B9B9B9"/>
+  </renderingAttribute>
+
+  <renderingAttribute name="cycleRoutelcnColor">
+    <case engine_v1="false" attrColorValue="#600000ff"/>
+    <case attrColorValue="#800000ff"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRoutercnColor">
+    <case engine_v1="false" attrColorValue="#60ff00ff"/>
+    <case attrColorValue="#80ff00ff"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRoutencnColor">
+    <case engine_v1="false" attrColorValue="#60ff4000"/>
+    <case attrColorValue="#80ff4000"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteicnColor">
+    <case engine_v1="false" attrColorValue="#60ff0000"/>
+    <case attrColorValue="#80ff0000"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteTextColor">
+    <case nightMode="true" attrColorValue="#75C5FF"/>
+    <case attrColorValue="#0000ff"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteTextHaloColor">
+    <case nightMode="true" attrColorValue="#660E151A"/>
+    <case attrColorValue="#eaffffff"/>
+  </renderingAttribute>
+  <renderingAttribute name="mtbRouteTextColor">
+    <case attrColorValue="#7000ff"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteColor">
+    <case attrColorValue="#80945700"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale0Color">
+    <case attrColorValue="#00A10F"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale0UnrecommendedColor">
+    <case attrColorValue="#777bf373"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScaleImba0Color">
+    <case attrColorValue="#00C750"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale1Color">
+    <case attrColorValue="#6a8cf2"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScaleImba1Color">
+    <case attrColorValue="#2C5DF2"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale1UnrecommendedColor">
+    <case attrColorValue="#669c9aef"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale2Color">
+    <case attrColorValue="#df4b4b"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScaleImba2Color">
+    <case attrColorValue="#FF2121"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale2UnrecommendedColor">
+    <case attrColorValue="#66f76d6b"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale3Color">
+    <case attrColorValue="#8c8a84"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScaleImba3Color">
+    <case attrColorValue="#5E5D58"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale3UnrecommendedColor">
+    <case attrColorValue="#558c8a84"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale4Color">
+    <case attrColorValue="#8c8a84"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScaleImba4Color">
+    <case attrColorValue="#5E5D58"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale4UnrecommendedColor">
+    <case attrColorValue="#558c8a84"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale4AdditionalColor">
+    <case attrColorValue="#bbffd518"/>
+  </renderingAttribute>
+  <renderingAttribute name="cycleRouteMtbScale4AdditionalUnrecommendedColor">
+    <case attrColorValue="#99ffd518"/>
+  </renderingAttribute>
+  <renderingAttribute name="classBicycleMtbColor">
+    <case attrColorValue="#aaffe05b"/>
+  </renderingAttribute>
+
+  <!-- MATERIAL COLORS -->
+
+  <renderingAttribute name="countryBoundaryColor">
+    <case attrColorValue="#55673ab7" />
+  </renderingAttribute>
+
+  <renderingAttribute name="red">
+    <case attrColorValue="#f44336" />
+  </renderingAttribute>
+
+  <renderingAttribute name="pink">
+    <case attrColorValue="#e91e63" />
+  </renderingAttribute>
+
+  <renderingAttribute name="purple">
+    <!-- <case attrColorValue="#d500f9" /> -->
+    <case attrColorValue="#9c27b0" />
+  </renderingAttribute>
+
+  <renderingAttribute name="deepPurple">
+    <case attrColorValue="#673ab7" />
+  </renderingAttribute>
+
+  <renderingAttribute name="indigo">
+    <case attrColorValue="#3f51b5" />
+  </renderingAttribute>
+
+  <renderingAttribute name="blue">
+    <case attrColorValue="#2196f3" />
+  </renderingAttribute>
+
+  <renderingAttribute name="lightBlue">
+    <case attrColorValue="#03a9f4" />
+  </renderingAttribute>
+
+  <renderingAttribute name="cyan">
+    <case attrColorValue="#00bcd4" />
+  </renderingAttribute>
+
+  <renderingAttribute name="teal">
+    <case attrColorValue="#009688" />
+  </renderingAttribute>
+
+  <renderingAttribute name="green">
+    <case attrColorValue="#4caf50" />
+  </renderingAttribute>
+
+  <renderingAttribute name="lightGreen">
+    <case attrColorValue="#8bc34a" />
+  </renderingAttribute>
+
+  <renderingAttribute name="lime">
+    <case attrColorValue="#cddc39" />
+  </renderingAttribute>
+
+  <renderingAttribute name="yellow">
+    <case attrColorValue="#ffeb3b" />
+  </renderingAttribute>
+
+  <renderingAttribute name="amber">
+    <case attrColorValue="#ffc107" />
+  </renderingAttribute>
+
+  <renderingAttribute name="orange">
+    <!-- <case attrColorValue="#ff9800" /> -->
+    <case attrColorValue="#ff9100" />
+  </renderingAttribute>
+
+  <renderingAttribute name="deepOrange">
+    <case attrColorValue="#ff5722" />
+  </renderingAttribute>
+
+  <renderingAttribute name="brown">
+    <case attrColorValue="#795548" />
+  </renderingAttribute>
+
+  <renderingAttribute name="grey">
+    <!-- <case attrColorValue="#bdbdbd" /> -->
+    <case attrColorValue="#9e9e9e" />
+  </renderingAttribute>
+
+  <renderingAttribute name="blueGrey">
+    <case attrColorValue="#607d8b" />
+  </renderingAttribute>
+
+  <renderingAttribute name="white">
+    <case attrColorValue="#FFFFFF" />
+  </renderingAttribute>
+
+  <renderingAttribute name="black">
+    <case attrColorValue="#000000" />
+  </renderingAttribute>
+
+  <renderingAttribute name="transparent">
+    <case attrColorValue="#00000000" />
+  </renderingAttribute>
+
+  <renderingAttribute name="asphaltColor">
+    <case detailedColors="true" attrColorValue="#03a9f4" />
+    <case detailedColors="false" attrColorValue="#2196f3"  />
+  </renderingAttribute>
+
+  <renderingAttribute name="pavedColor">
+    <case detailedColors="true" attrColorValue="#1769aa" />
+    <case detailedColors="false" attrColorValue="$asphaltColor" />
+  </renderingAttribute>
+
+  <renderingAttribute name="accessPrivateColor">
+    <!-- <case attrColorValue="#b39ddb" /> -->
+    <!-- <case attrColorValue="#f06292" /> -->
+    <!-- <case attrColorValue="#a1887f" /> -->
+    <case attrColorValue="#f44336" />
+    <!-- <case attrColorValue="#ff5252" /> -->
+
+  </renderingAttribute>
+
+  <renderingAttribute name="defaultColor">
+    <!-- brown #50 -->
+    <case attrColorValue="#efebe9" />
+    <!-- deepPurple #50 -->
+    <!-- <case attrColorValue="#ede7f6" /> -->
+  </renderingAttribute>
+
+  <renderingAttribute name="waterColor">
+    <case attrColorValue="#AA93C7DA"/>
+  </renderingAttribute>
+
+  <renderingAttribute name="woodColor">
+    <case attrColorValue="#AAD7E1C9"/>
+  </renderingAttribute>
+
+  <renderingAttribute name="unknownColor">
+    <case groundSurveyMode="true" attrColorValue="#ffffff" />
+    <case groundSurveyMode="false" attrColorValue="#adadad" />
+  </renderingAttribute>
+
+  <renderingAttribute name="unconfirmedColor">
+    <case attrColorValue="#adadad" />
+    <!-- <case attrColorValue="#CBBACE" /> -->
+    <!-- <case attrColorValue="#78909c" /> -->
+  </renderingAttribute>
+
+  <renderingAttribute name="unclassifiedColor">
+    <!-- <case attrColorValue="#FF00E9" /> -->
+    <case attrColorValue="$black" />
+  </renderingAttribute>
+
+  <renderingAttribute name="noviceColor">
+    <case detailedColors="true" attrColorValue="#8bc34a" />
+    <case detailedColors="false" attrColorValue="#4caf50" />
+  </renderingAttribute>
+
+  <renderingAttribute name="beginnerColor">
+    <case detailedColors="true" attrColorValue="#357a38" />
+    <case detailedColors="false" attrColorValue="$noviceColor" />
+  </renderingAttribute>
+
+  <renderingAttribute name="intermediateColor">
+    <case detailedColors="true" attrColorValue="#ffab40" />
+    <case detailedColors="false" attrColorValue="#ffa726" />
+  </renderingAttribute>
+
+  <renderingAttribute name="advancedColor">
+    <case detailedColors="true" attrColorValue="#ff6d00" />
+    <case detailedColors="false" attrColorValue="$intermediateColor" />
+  </renderingAttribute>
+
+  <renderingAttribute name="hardColor">
+    <case detailedColors="true" attrColorValue="#e040fb" />
+    <case detailedColors="false" attrColorValue="#d500f9" />
+  </renderingAttribute>
+
+  <renderingAttribute name="extremeColor">
+    <case detailedColors="true" attrColorValue="#aa00ff" />
+    <case detailedColors="false" attrColorValue="$hardColor" />
+  </renderingAttribute>
+
+  <!-- ATTRIBUTES -->
+
+  <renderingAttribute name="gpsColor">
+    <case attrColorValue="#AAfffb00" />
+  </renderingAttribute>
+
+  <renderingAttribute name="shadowRendering">
+    <!-- 0 - no shadow, 1 - one step, 2 - blur shadow, 3 - solid shadow -->
+    <case minzoom="13" attrIntValue="3"/>
+    <case minzoom="6" maxzoom="12" attrIntValue="3" />
+    <case attrIntValue="0"/>
+  </renderingAttribute>
+
+  <renderingAttribute name="railwayRailColor">
+    <case attrColorValue="$accessPrivateColor"/>
+  </renderingAttribute>
+
+  <renderingAttribute name="railwayRailPathEffect" value="8_4" />
+
+  <!-- PATHS -->
+
+  <renderingAttribute name="pathStrokeColor">
+    <!-- PRIVATE -->
+    <switch>
+      <case additional="access=no" />
+      <case additional="access=private" />
+      <case additional="motorcycle=no" />
+      <case additional="motorcycle=private" />
+      <case additional="motor_vehicle=no" />
+      <case additional="motor_vehicle=private" />
+      <apply attrColorValue="$accessPrivateColor" />
+    </switch>
+
+    <!-- SURVEY -->
+    <apply>
+      <case groundSurveyMode="true" additional="survey=ground" />
+      <case groundSurveyMode="true" attrColorValue="$unknownColor" />
+    </apply>
+
+    <!-- ASPHALT -->
+    <switch>
+      <case additional="smoothness=excellent" />
+      <case additional="surface=asphalt" />
+      <apply attrColorValue="$asphaltColor" />
+    </switch>
+
+    <!-- PAVED -->
+    <switch>
+      <case additional="smoothness=good" />
+      <case additional="tracktype=grade1" />
+      <case additional="surface=paved" />
+      <case additional="surface=concrete" />
+      <case additional="surface=concrete:plates" />
+      <case additional="surface=concrete:lanes" />
+      <case additional="surface=paving_stones" />
+      <case additional="surface=sett" />
+      <case additional="surface=unhewn_cobblestone" />
+      <case additional="surface=metal" />
+      <!-- <case additional="surface=wood" /> -->
+      <apply attrColorValue="$pavedColor" />
+    </switch>
+
+    <!-- NOVICE -->
+    <switch>
+      <case additional="dirtbike:scale=0" />
+      <case additional="smoothness=good" />
+      <case additional="smoothness=intermediate" />
+      <case additional="smoothness=bad" />
+      <apply attrColorValue="$noviceColor" />
+    </switch>
+
+    <!-- BEGINNER -->
+    <switch>
+      <case additional="dirtbike:scale=1" />
+      <case additional="smoothness=very_bad" />
+      <apply attrColorValue="$beginnerColor" />
+    </switch>
+
+    <!-- INTERMEDIATE -->
+    <switch>
+      <case additional="dirtbike:scale=2" />
+      <case additional="smoothness=horrible" />
+      <apply attrColorValue="$intermediateColor" />
+    </switch>
+
+    <!-- ADVANCED -->
+    <switch>
+      <case additional="dirtbike:scale=3" />
+      <case additional="smoothness=very_horrible" />
+      <apply attrColorValue="$advancedColor" />
+    </switch>
+
+    <!-- HARD -->
+    <switch>
+      <case additional="dirtbike:scale=4" />
+      <apply attrColorValue="$hardColor" />
+    </switch>
+
+    <!-- EXTREME -->
+    <switch>
+      <case additional="dirtbike:scale=5" />
+      <apply attrColorValue="$extremeColor" />
+    </switch>
+
+    <!-- UNCLASSIFIED -->
+    <switch>
+      <case additional="dirtbike:scale=?" />
+      <case additional="tracktype=" />
+      <case additional="mtb:scale=" />
+      <case additional="motorcycle=yes" />
+      <case tag="route_bicycle" value="" />
+      <case tag="route_mtb" value="" />
+      <case tag="osmand_mtb_scale_imba" value="trail" />
+      <case additional="class:bicycle:mtb=" />
+      <case additional="class:bicycle=" />
+      <apply attrColorValue="$unclassifiedColor" />
+    </switch>
+   <!--  <apply>
+      <case tag="highway" value="path" />
+      <switch>
+        <case additional="surface=compacted" />
+        <case additional="surface=gravel" />
+        <case additional="surface=fine_gravel" />
+        <case additional="surface=unpaved" />
+        <case additional="surface=dirt" />
+        <case additional="surface=ground" />
+        <case additional="surface=mud" />
+        <apply attrColorValue="$unclassifiedColor" />
+      </switch>
+    </apply> -->
+
+    <!-- UNCONFIRMED -->
+    <switch>
+      <case groundSurveyMode="true" additional="survey=ground" />
+      <apply attrColorValue="$unconfirmedColor" />
+    </switch>
+
+    <!-- UNKNOWN -->
+    <case attrColorValue="$unknownColor" />
+  </renderingAttribute>
+
+  <renderingAttribute name="gpx">
+    <switch>
+      <case color="$gpsColor" />
+      <apply cap="BUTT">
+        <case>
+          <apply_if minzoom="3" maxzoom="5" strokeWidth="1:1"/>
+          <apply_if minzoom="6" maxzoom="11" strokeWidth="3:3"/>
+          <apply_if minzoom="12" strokeWidth="5:5"/>
+        </case>
+      </apply>
+    </switch>
+  </renderingAttribute>
+
+
+  <!-- <renderingAttribute name="contourLineColor">
+    <case attrColorValue="#33795548" />
+  </renderingAttribute> -->
+
+  <renderingAttribute name="contourLineColor">
+    <!-- <case contourColorScheme="light_brown" attrColorValue="#66AAAACC" /> -->
+    <case contourColorScheme="brown" attrColorValue="#22bd6819" />
+  </renderingAttribute>
+
+  <renderingAttribute name="landuseResidentialColor">
+    <case attrColorValue="#AAb0bec5"/>
+
+    <!-- <case attrColorValue="#77b0bec5"/> -->
+    <case attrColorValue="#DCDACC"/>
+  </renderingAttribute>
+
+  <!-- <renderingAttribute name="landuseOrchardColor">
+    <case attrColorValue="#bbeca1"/>
+  </renderingAttribute>
+ -->
+  <!-- <renderingAttribute name="grassColor">
+    <case attrColorValue="#E5FFE8"/>
+  </renderingAttribute> -->
+  <!-- <renderingAttribute name="farmlandColor">
+    <case attrColorValue="#FFF6E3"/>
+  </renderingAttribute> -->
+  <!-- <renderingAttribute name="farmyardColor">
+    <case attrColorValue="#EEE5D9"/>
+  </renderingAttribute> -->
+  <renderingAttribute name="desertColor">
+    <case attrColorValue="#fff7bf"/>
+  </renderingAttribute>
+  <renderingAttribute name="sandColor">
+    <case attrColorValue="#ffe1ba"/>
+  </renderingAttribute>
+  <renderingAttribute name="beachColor">
+    <case attrColorValue="#FFD9A7"/>
+  </renderingAttribute>
+
+  <!-- <renderingConstant name="highwayTrackTextHaloRadiusDay" value="1"/> -->
+
+  <!-- <renderingAttribute name="highwayTrackTextHaloColor">
+    <case nightMode="true" attrColorValue="#99333333"/>
+    <case attrColorValue="#ffffff"/>
+  </renderingAttribute> -->
+
+  <!-- <renderingConstant name="highwayTrackTextHaloColorDay" value="#aaf1eae4"/> -->
+
+  <renderingConstant name="boundaryNationalParkColor" value="#a0800080"/>
+  <renderingConstant name="boundaryNationalParkColor2" value="#5009dd09"/>
+
+  <!-- <renderingAttribute name="waterTextHaloColor">
+    <case attrColorValue="#FFFFFF"/>
+  </renderingAttribute>
+ -->
+  <renderingConstant name="" value=""/>
+
+  <renderingAttribute name="boundaryColorInner">
+    <case minzoom="12" attrColorValue="#aa0002B4"/>
+    <case attrColorValue="#990002B4"/>
+  </renderingAttribute>
+  <renderingAttribute name="boundaryColorOuter">
+    <!-- <case minzoom="12" attrColorValue="#500002B4"/>
+    <case attrColorValue="#300002B4"/> -->
+    <!-- <case minzoom="12" attrColorValue="#55607d8b"/> -->
+    <case attrColorValue="#55607d8b"/>
+  </renderingAttribute>
+
+  <renderingAttribute name="placeCityVillageTextColor">
+    <case attrColorValue="#000000"/>
+  </renderingAttribute>
+  <renderingConstant name="placeTextHaloRadiusDay" value="1:1"/>
+  <renderingAttribute name="placeCityVillageTextHaloColor">
+    <case attrColorValue="#ffffff"/>
+  </renderingAttribute>
+
+  <order>
+    <switch>
+      <!-- ORDER - POINT -->
+      <switch area="false" point="true" objectType="1" order="128">
+        <case tag="" value=""/>
+        <case tag="natural" value=""/>
+        <case tag="osmand" value="file_waypoint"/>
+        <case tag="osmand" value="fav"/>
+        <case tag="barrier" value="" />
+        <case tag="amenity" value="fuel"/>
+        <case tag="noexit" value="" />
+        <case tag="ford" value="yes"/>
+        <case tag="waterway" value="waterfall"/>
+        <case tag="fixme_tag" value="yes"/>
+        <case tag="note_tag" value="yes"/>
+        <case tag="description_tag" value="yes"/>
+        <case tag="natural" value="peak">
+          <apply_if additional="ele_limit=200" maxzoom="12" order="-1"/>
+          <apply_if additional="ele_limit=500" maxzoom="11" order="-1"/>
+        </case>
+      </switch>
+
+      <!-- ORDER - POLYGON -->
+      <switch area="true" point="false" addPoint="true" objectType="3" order="5">
+        <case tag="place" value="island" order="1"/>
+        <case tag="place" value="islet" order="1"/>
+        <switch layer="-1" order="3">
+          <case tag="natural" value="coastline"/>
+          <case tag="natural" value="land"/>
+          <case tag="place" value="island"/>
+          <case tag="place" value="islet"/>
+          <case tag="" value=""/>
+        </switch>
+      </switch>
+
+      <!-- ORDER - LANDUSE -->
+      <switch cycle="true" point="false" addPoint="true" objectType="3" order="5">
+        <case tag="natural" value="water" order="9"/>
+        <case tag="waterway" value="dock"/>
+        <case tag="landuse" value="reservoir" order="9"/>
+        <case tag="waterway" value="riverbank" order="9"/>
+        <case tag="natural" value="wetland" order="8"/>
+        <case tag="natural" value="scrub" order="7"/>
+        <case tag="natural" value="wood" order="7"/>
+        <case tag="landuse" value="forest" order="7"/>
+        <case tag="wood:lost" value="" order="7"/>
+        <case tag="amenity" value="place_of_worship" ignorePolygonAsPointArea="true"/>
+        <case tag="fixme_tag" value="yes" order="11"/>
+        <case tag="" value="" order="5"/>
+      </switch>
+
+      <!-- ORDER - LINE -->
+      <switch area="false" objectType="2" order="80">
+        <case tag="fixme_tag" value="yes" order="12"/>
+        <case tag="description_tag" value="yes" order="13"/>
+        <case tag="note_tag" value="yes" order="14"/>
+        <case tag="name" value="" order="11"/>
+        <!-- default line -->
+        <case layer="-1" tag="" value="" order="11"/>
+        <case tag="" value="" order="12"/>
+        <case tag="natural" value="coastline_broken" order="63"/>
+        <case tag="natural" value="coastline_line" order="63"/>
+        <case tag="osmand" value="file_trackline"/>
+        <case tag="osmand" value="file_routeline"/>
+        <case tag="admin_level" value="" order="62"/>
+        <case tag="waterway" value="waterfall" order="180"/>
+        <case tag="waterway" value="">
+          <apply_if layer="1" order="-1"/>
+          <!-- <apply_if additional="layer=2" order="120"/>
+          <apply_if additional="layer=3" order="148"/> -->
+        </case>
+        <switch>
+          <case tag="highway" value="motorway" order="84">
+            <apply_if layer="1" order="107"/>
+            <apply_if additional="layer=2" order="137"/>
+            <apply_if additional="layer=3" order="165"/>
+            <apply_if layer="-1" order="62"/>
+            <apply_if additional="layer=-2" order="41"/>
+          </case>
+          <case tag="highway" value="motorway_link" order="71">
+            <apply_if layer="1" order="94"/>
+            <apply_if additional="layer=2" order="124"/>
+            <apply_if additional="layer=3" order="152"/>
+            <apply_if layer="-1" order="49"/>
+            <apply_if additional="layer=-2" order="25"/>
+          </case>
+          <case tag="highway" value="trunk" order="83">
+            <apply_if layer="1" order="106"/>
+            <apply_if additional="layer=2" order="136"/>
+            <apply_if additional="layer=3" order="164"/>
+            <apply_if layer="-1" order="61"/>
+            <apply_if additional="layer=-2" order="40"/>
+          </case>
+          <case tag="highway" value="trunk_link" order="70">
+            <apply_if layer="1" order="93"/>
+            <apply_if additional="layer=2" order="123"/>
+            <apply_if additional="layer=3" order="151"/>
+            <apply_if layer="-1" order="48"/>
+            <apply_if additional="layer=-2" order="24"/>
+          </case>
+          <case tag="highway" value="primary" order="82">
+            <apply_if layer="1" order="105"/>
+            <apply_if additional="layer=2" order="135"/>
+            <apply_if additional="layer=3" order="163"/>
+            <apply_if layer="-1" order="60"/>
+            <apply_if additional="layer=-2" order="39"/>
+          </case>
+          <case tag="highway" value="primary_link" order="69">
+            <apply_if layer="1" order="92"/>
+            <apply_if additional="layer=2" order="122"/>
+            <apply_if additional="layer=3" order="150"/>
+            <apply_if layer="-1" order="47"/>
+            <apply_if additional="layer=-2" order="23"/>
+          </case>
+          <case tag="highway" value="secondary" order="81">
+            <apply_if layer="1" order="104"/>
+            <apply_if additional="layer=2" order="134"/>
+            <apply_if additional="layer=3" order="162"/>
+            <apply_if layer="-1" order="59"/>
+            <apply_if additional="layer=-2" order="38"/>
+          </case>
+          <case tag="highway" value="secondary_link" order="68">
+            <apply_if layer="1" order="91"/>
+            <apply_if additional="layer=2" order="121"/>
+            <apply_if additional="layer=3" order="149"/>
+            <apply_if layer="-1" order="46"/>
+            <apply_if additional="layer=-2" order="22"/>
+          </case>
+          <case tag="highway" value="tertiary" order="80">
+            <apply_if layer="1" order="103"/>
+            <apply_if additional="layer=2" order="133"/>
+            <apply_if additional="layer=3" order="161"/>
+            <apply_if layer="-1" order="58"/>
+            <apply_if additional="layer=-2" order="37"/>
+          </case>
+          <case tag="highway" value="tertiary_link" order="67">
+            <apply_if layer="1" order="90"/>
+            <apply_if additional="layer=2" order="120"/>
+            <apply_if additional="layer=3" order="148"/>
+            <apply_if layer="-1" order="45"/>
+            <apply_if additional="layer=-2" order="21"/>
+          </case>
+          <case tag="highway" value="road" order="79">
+            <apply_if layer="1" order="102"/>
+            <apply_if additional="layer=2" order="132"/>
+            <apply_if additional="layer=3" order="160"/>
+            <apply_if layer="-1" order="57"/>
+            <apply_if additional="layer=-2" order="36"/>
+          </case>
+          <case tag="highway" value="unclassified" order="79">
+            <apply_if layer="1" order="102"/>
+            <apply_if additional="layer=2" order="132"/>
+            <apply_if additional="layer=3" order="160"/>
+            <apply_if layer="-1" order="57"/>
+            <apply_if additional="layer=-2" order="36"/>
+          </case>
+          <case tag="highway" value="residential" order="78">
+            <apply_if layer="1" order="101"/>
+            <apply_if additional="layer=2" order="131"/>
+            <apply_if additional="layer=3" order="159"/>
+            <apply_if layer="-1" order="56"/>
+            <apply_if additional="layer=-2" order="35"/>
+          </case>
+          <case tag="highway" value="service" order="78">
+            <apply_if layer="1" order="101"/>
+            <apply_if additional="layer=2" order="131"/>
+            <apply_if additional="layer=3" order="159"/>
+            <apply_if layer="-1" order="56"/>
+            <apply_if additional="layer=-2" order="35"/>
+          </case>
+          <case tag="highway" value="busway" order="77">
+            <apply_if layer="1" order="100"/>
+            <apply_if additional="layer=2" order="130"/>
+            <apply_if additional="layer=3" order="158"/>
+            <apply_if layer="-1" order="55"/>
+            <apply_if additional="layer=-2" order="34"/>
+          </case>
+          <case tag="highway" value="living_street" order="77">
+            <apply_if layer="1" order="100"/>
+            <apply_if additional="layer=2" order="130"/>
+            <apply_if additional="layer=3" order="158"/>
+            <apply_if layer="-1" order="55"/>
+            <apply_if additional="layer=-2" order="34"/>
+          </case>
+          <case tag="highway" value="pedestrian" order="76">
+            <apply_if layer="1" order="99"/>
+            <apply_if additional="layer=2" order="129"/>
+            <apply_if additional="layer=3" order="157"/>
+            <apply_if layer="-1" order="54"/>
+            <apply_if additional="layer=-2" order="33"/>
+          </case>
+          <case tag="highway" value="track" order="64">
+            <apply_if layer="1" order="89"/>
+            <apply_if additional="layer=2" order="119"/>
+            <apply_if additional="layer=3" order="147"/>
+            <apply_if layer="-1" order="20"/>
+            <apply_if additional="layer=-2" order="19"/>
+          </case>
+          <case tag="highway" value="footway" order="64">
+            <apply_if layer="1" order="110"/>
+            <apply_if additional="layer=2" order="140"/>
+            <apply_if additional="layer=3" order="166"/>
+            <apply_if layer="-1" order="20"/>
+            <apply_if additional="layer=-2" order="19"/>
+          </case>
+          <case tag="highway" value="steps" order="65">
+            <apply_if layer="1" order="111"/>
+            <apply_if additional="layer=2" order="140"/>
+            <apply_if additional="layer=3" order="166"/>
+            <apply_if layer="-1" order="20"/>
+            <apply_if additional="layer=-2" order="19"/>
+          </case>
+          <case tag="highway" value="path" order="37">
+            <apply_if layer="1" order="110"/>
+            <apply_if additional="layer=2" order="140"/>
+            <apply_if additional="layer=3" order="166"/>
+            <apply_if layer="-1" order="20"/>
+            <apply_if additional="layer=-2" order="19"/>
+          </case>
+        </switch>
+        <case tag="highway" value="bridleway" order="53"/>
+        <case tag="barrier" value="" order="20" />
+        <case tag="ford" value="yes" order="85"/>
+
+        <case tag="contour" value="elevation" order="11">
+          <apply_if contourDensity="medium_w" additional="contourtype=5m" order="-1"/>
+          <apply_if contourDensity="medium_w" additional="contourtype=10m" order="-1"/>
+          <apply_if contourDensity="medium_w" additional="contourtype=50m" order="-1"/>
+          <apply_if contourDensity="low" additional="contourtype=5m" order="-1"/>
+          <apply_if contourDensity="low" additional="contourtype=10m" order="-1"/>
+          <apply_if contourDensity="low" additional="contourtype=20m" order="-1"/>
+          <apply_if contourDensity="low" additional="contourtype=20f" order="-1"/>
+          <apply_if contourDensity="low" additional="contourtype=40f" order="-1"/>
+        </case>
+      </switch>
+    </switch>
+
+  </order>
+
+  <text>
+
+    <switch hideTexts="false">
+
+
+      <!-- TEXT - VILLAGE -->
+      <switch minzoom="3" textColor="$placeCityVillageTextColor" textWrapWidth="20" textBold="true" textDy="-4">
+        <case minzoom="5" tag="place" value="city" nameTag="" intersectionMargin="25" textOrder="32">
+          <case minzoom="6" maxzoom="7" textSize="17"/>
+          <case minzoom="8" textSize="20"/>
+        </case>
+        <switch>
+          <case minzoom="8" tag="place" value="town" textSize="16" textOrder="36" nameTag="" intersectionMargin="15"/>
+        </switch>
+        <switch>
+          <case minzoom="11" tag="place" value="village" textSize="14" textOrder="40" nameTag="" intersectionMargin="15">
+        <!--     <apply_if minzoom="16" textSize="16"/>
+            <apply_if minzoom="17" textSize="17"/> -->
+          </case>
+        </switch>
+        <switch>
+          <case minzoom="13" tag="place" value="hamlet" textSize="12" textOrder="40" nameTag="" intersectionMargin="15">
+        <!--     <apply_if minzoom="16" textSize="16"/>
+            <apply_if minzoom="17" textSize="17"/> -->
+          </case>
+        </switch>
+        <apply textHaloRadius="$placeTextHaloRadiusDay" textHaloColor="$placeCityVillageTextHaloColor"/>
+        <apply textDy="-5"/>
+      </switch>
+
+      <!-- TEXT - CONTOUR LINES -->
+      <switch tag="contour" value="elevation" nameTag="elevation" textOnPath="false" textBold="true" textOrder="255" textHaloColor="#bbffffff" textHaloRadius="1">
+        <case minzoom="13" contourLines="11"/>
+        <case minzoom="13" contourLines="12"/>
+        <case minzoom="13" contourLines="13"/>
+        <case minzoom="13" contourLines=""/>
+        <case minzoom="14" contourLines="14"/>
+        <case minzoom="15" contourLines="15"/>
+        <case minzoom="16" contourLines="16"/>
+        <apply>
+          <!-- <case minzoom="14" additional="contourtype=20m" textColor="#666666" textSize="11" textMinDistance="170">
+          </case>
+          <switch minzoom="15">
+            <case additional="contourtype=10m"/>
+            <case additional="contourtype=40f"/>
+            <apply textColor="#777777" textSize="10" textMinDistance="160"/>
+          </switch> -->
+          <switch>
+            <case additional="contourtype=100m" textSize="11"/>
+            <!-- <case additional="contourtype=1000f" textSize="12"/>
+            <case additional="contourtype=200f" textSize="11"/> -->
+            <apply textColor="#444444" textOrder="250" textMinDistance="250"/>
+          </switch>
+          <case additional="contourtype=50m" textColor="#666666" textSize="11" textMinDistance="200" textOrder="254">
+          </case>
+        </apply>
+      </switch>
+
+      <!-- TEXT - WATER -->
+      <!-- <switch textColor="#266579" textHaloRadius="1" textHaloColor="$waterTextHaloColor" textItalic="true">
+        <switch textSize="12">
+          <case minzoom="13" tag="landuse" value="water" nameTag="" textWrapWidth="20" textOrder="218"/>
+          <case minzoom="13" tag="landuse" value="reservoir" nameTag="" textWrapWidth="20" textOrder="218"/>
+          <switch>
+            <case minzoom="15" tag="waterway" value="waterfall" additional="osmand_remarkable_waterfall=yes" nameTag2="height" textWrapWidth="20" textOnPath="true" textOrder="217"/>
+            <case minzoom="15" tag="waterway" value="waterfall" nameTag="" textWrapWidth="20" textOnPath="true" textOrder="217"/>
+          </switch>
+        </switch>
+      </switch> -->
+
+      <!-- TEXT - FIXME -->
+      <!-- <switch minzoom="13" intersectionSizeFactor="0" intersectionMargin="0">
+        <switch tag="fixme_tag" value="yes" nameTag="fixme" textColor="#ffffff" textHaloColor="#ccf800e0" textWrapWidth="20" textOrder="1">
+          <case maxzoom="15" textSize="10" textDy="-40"/>
+          <case minzoom="16" textSize="11" textDy="-50"/>
+        </switch>
+        <apply textBold="true" textHaloRadius="2"/>
+      </switch> -->
+
+      <!-- <switch minzoom="14" textColor="#000000" textHaloRadius="$highwayTrackTextHaloRadiusDay" textHaloColor="$highwayTrackTextHaloColorDay" textOnPath="true" nameTag="">
+        <case tag="highway" value="primary" textOrder="94"/>
+        <case tag="highway" value="secondary" textOrder="94"/>
+        <case tag="highway" value="tertiary" textOrder="94"/>
+        <case minzoom="16" tag="area:highway" value="tertiary" textBold="true" textItalic="true" textOrder="95" intersectsWith="any" textWrapWidth="25"/>
+        <case tag="highway" value="tertiary_link" textOrder="96"/>
+        <apply>
+          <case maxzoom="14" textSize="12"/>
+          <case maxzoom="15" textSize="13"/>
+          <case maxzoom="16" textSize="14"/>
+          <case maxzoom="17" textSize="16"/>
+          <case minzoom="18" textSize="18"/>
+        </apply>
+      </switch> -->
+
+      <!-- <switch minzoom="13">
+        <switch>
+          <case tag="highway" value="track" nameTag="" textOrder="11"/>
+          <case tag="highway" value="path" nameTag="" textOrder="12"/>
+          <case tag="highway" value="footway" nameTag="" textOrder="13"/>
+          <apply>
+            <case nameTag="" />
+            <apply maxzoom="14" textSize="12"/>
+          </apply>
+        </switch>
+        <apply textColor="#000000" textHaloRadius="$highwayTrackTextHaloRadiusDay" textHaloColor="$highwayTrackTextHaloColorDay" textOnPath="true"/>
+        <apply_if minzoom="15">
+          <case maxzoom="15" textSize="13"/>
+          <case maxzoom="16" textSize="14"/>
+          <case maxzoom="17" textSize="16"/>
+          <case minzoom="18" textSize="18"/>
+        </apply_if>
+      </switch> -->
+
+    </switch>
+
+  </text>
+
+  <point>
+    <!-- POINT - PEAK -->
+    <case hidePeaks="false" minzoom="13" tag="natural" value="peak" iconOrder="65" icon="natural_peak" iconVisibleSize="10" intersectionSizeFactor="2" />
+
+    <!-- POINT - VIEWPOINT -->
+    <case hidePOIs="false" minzoom="14" tag="tourism" value="viewpoint" icon="topo_viewpoint" shield="topo_viewpoint_shield" iconOrder="85" iconVisibleSize="10" intersectionSizeFactor="2"/>
+
+    <!-- POINT - FORD -->
+    <case hidePOIs="false" minzoom="14" tag="ford" value="yes" icon="topo_ford" shield="topo_ford_shield" iconVisibleSize="10" intersectionSizeFactor="2"/>
+
+    <!-- POINT - TEMPLE -->
+    <case hidePOIs="false" minzoom="14" tag="amenity" value="place_of_worship" iconOrder="40" iconVisibleSize="10" intersectionSizeFactor="2">
+      <case additional="religion=christian" icon="topo_christian" shield="topo_christian_shield"/>
+      <case additional="religion=jewish" icon="topo_jewish" shield="topo_jewish_shield"/>
+      <case additional="religion=muslim" icon="topo_muslim" shield="topo_muslim_shield"/>
+      <case additional="religion=sikh" icon="religion_sikh" shield="topo_sikh_shield"/>
+      <case additional="religion=buddhist" icon="topo_buddhist" shield="topo_buddhist_shield"/>
+      <case additional="religion=hindu" icon="topo_hindu" shield="topo_hindu_shield"/>
+      <case additional="religion=shinto" icon="religion_shinto" shield="topo_shinto_shield"/>
+      <case additional="religion=taoist" icon="religion_taoist" shield="topo_taoist_shield"/>
+      <case icon="topo_religion_unknown" shield="topo_religion_unknown_shield"/>
+    </case>
+
+    <!-- POINT - WATERFALL -->
+    <case hidePOIs="false" minzoom="14" tag="waterway" value="waterfall" icon="topo_waterfall" shield="topo_waterfall_shield"/>
+
+    <!-- POINT - CAVE -->
+    <case hidePOIs="false" minzoom="14" tag="natural" value="cave_entrance" icon="topo_cave" shield="topo_cave_shield" iconOrder="85"/>
+
+    <!-- POINT - NOEXIT -->
+    <case hidePOIs="false" minzoom="14" tag="noexit" value="yes" icon="" >
+      <apply_if maxzoom="14" icon="barrier_small_black_bold_2"/>
+      <apply_if minzoom="15" icon="barrier_small_black_bold_1"/>
+    </case>
+
+    <!-- POINT - GATE -->
+    <case hidePOIs="false" minzoom="14" tag="barrier" value="log" icon="mm_hazard_yes">
+    </case>
+
+    <case hidePOIs="false" minzoom="14" tag="barrier" value="" >
+      <apply_if maxzoom="14" icon="barrier_small_red_bold_2"/>
+      <apply_if minzoom="15" icon="barrier_small_red_bold_1"/>
+    </case>
+
+    <!-- POINT - FIXME -->
+    <!-- <case hidePOIs="false" minzoom="14" tag="fixme_tag" value="yes" iconOrder="128" icon="fixme_tag_lowzoom_yes"  iconVisibleSize="10" intersectionSizeFactor="2" /> -->
+  </point>
+
+  <polygon>
+
+    <!-- POLYGON - LANDUSE -->
+    <switch hideLanduse="false">
+      <case minzoom="11" tag="natural" value="beach" color_0="$beachColor"/>
+      <case minzoom="11" tag="natural" value="sand" color_0="$sandColor"/>
+      <case minzoom="6" tag="natural" value="desert" color="$desertColor"/>
+      <switch minzoom="6">
+        <case tag="natural" value="wood"/>
+        <case tag="landuse" value="forest"/>
+        <case tag="natural" value="scrub"/>
+        <case tag="natural" value="grassland"/>
+        <case tag="landuse" value="meadow"/>
+        <case tag="landuse" value="grass"/>
+        <case tag="natural" value="heath"/>
+        <apply color="$woodColor" color_0="$woodColor"/>
+      </switch>
+      <!-- <case minzoom="12" tag="natural" value="scrub">
+        <apply_if maxzoom="13" color="#b3e3b5"/>
+        <apply_if minzoom="14" color_0="#B3E3B5" />
+      </case> -->
+      <!-- <case minzoom="12" tag="landuse" value="orchard" color="$landuseOrchardColor" color_0="$landuseOrchardColor" color_2="#499720">
+      </case> -->
+      <!-- <switch minzoom="6" color="$grassColor">
+        <case tag="natural" value="grassland"/>
+        <case tag="landuse" value="meadow"/>
+        <case minzoom="12" tag="landuse" value="grassland"/>
+      </switch>
+      <switch minzoom="11">
+        <case tag="landuse" value="grass"/>
+        <case tag="natural" value="heath"/>
+        <apply color="$grassColor"/>
+      </switch> -->
+      <case minzoom="9" tag="landuse" value="residential" color="$landuseResidentialColor" />
+      <!-- <case minzoom="6" tag="landuse" value="farmland" color="$farmlandColor"/>
+      <case minzoom="12" tag="landuse" value="farmyard" color="$farmyardColor"/> -->
+    </switch>
+
+    <!-- POLYGON - WATER -->
+    <switch hideWater="false">
+      <switch>
+        <case minzoom="1" tag="natural" value="coastline"/>
+        <switch>
+          <case minzoom="4" tag="natural" value="water"/>
+          <case minzoom="10" tag="waterway" value="riverbank"/>
+          <case minzoom="7" tag="landuse" value="reservoir"/>
+          <case minzoom="7" tag="landuse" value="water"/>
+          <case minzoom="10" tag="landuse" value="basin"/>
+          <apply color_2="$waterColor" strokeWidth_2="0:0"/>
+        </switch>
+      </switch>
+      <apply color="$waterColor"/>
+      <!-- <apply_if additional="intermittent=yes" strokeWidth_2="1:0" color_2="#7479ec" pathEffect_2="7_5"/> -->
+    </switch>
+
+    <!-- POLYGON - LAND -->
+    <switch hideLanduse="false">
+      <case tag="place" value="island"/>
+      <case tag="place" value="islet"/>
+      <case tag="natural" value="land"/>
+      <apply color="$defaultColor"/>
+    </switch>
+
+  </polygon>
+
+  <line>
+    <!-- LINE - COASTLINE -->
+    <case hideLanduse="false" minzoom="1" tag="natural" value="coastline_broken" color="#111111" strokeWidth=":1"/>
+    <case hideLanduse="false" minzoom="5" tag="natural" value="coastline_line" color="#4580cf" strokeWidth=":1"/>
+
+<!-- LINE - WATER -->
+    <switch hideWater="false">
+      <switch minzoom="12">
+        <case tag="waterway" value="stream" />
+        <apply_if minzoom="13" maxzoom="13" strokeWidth="0.7:0.7"/>
+        <apply_if minzoom="14" maxzoom="14" strokeWidth="0.75:0.75"/>
+        <apply_if minzoom="15" maxzoom="16" strokeWidth="0.8:0.8"/>
+        <apply_if minzoom="17" maxzoom="17" strokeWidth="0.9:0.9"/>
+        <apply_if minzoom="18" strokeWidth="1:1"/>
+      </switch>
+      <switch minzoom="5" >
+        <case tag="waterway" value="river">
+          <apply minzoom="13" >
+            <case maxzoom="13" />
+            <case maxzoom="14" />
+            <case minzoom="15" />
+            <apply_if additional="intermittent=yes"/>
+          </apply>
+        </case>
+        <case tag="waterway" value="canal">
+          <apply minzoom="15">
+            <!-- <apply_if additional="intermittent=yes"/> -->
+          </apply>
+        </case>
+        <apply>
+          <apply_if maxzoom="9" strokeWidth="0.6:0.6"/>
+          <apply_if minzoom="10" maxzoom="12" strokeWidth="1:1"/>
+          <apply_if minzoom="13" maxzoom="13" strokeWidth="1.2:1.2"/>
+          <apply_if minzoom="14" maxzoom="14" strokeWidth="1.5:1.5"/>
+          <apply_if minzoom="15" maxzoom="16" strokeWidth="1.8:1.8"/>
+          <apply_if minzoom="17" maxzoom="17" strokeWidth="2.2:2.2"/>
+          <apply_if minzoom="18" strokeWidth="2.5:2.5"/>
+        </apply>
+      </switch>
+
+      <switch minzoom="13">
+        <case tag="waterway" value="ditch"/>
+        <case tag="waterway" value="drain"/>
+        <apply>
+          <apply_if minzoom="13" maxzoom="13" strokeWidth="1:1"/>
+          <apply_if minzoom="14" maxzoom="14" strokeWidth="1.3:1.3"/>
+          <apply_if minzoom="15" maxzoom="16" strokeWidth="1:1"/>
+          <apply_if minzoom="17" maxzoom="17" strokeWidth="1.2:1.2"/>
+          <apply_if minzoom="18" strokeWidth="1.7:1.7"/>
+        </apply>
+      </switch>
+      <!-- <apply_if additional="intermittent=yes">
+        <case maxzoom="13" pathEffect="4.5_3"/>
+        <case maxzoom="14" pathEffect="6_4"/>
+        <case maxzoom="16" pathEffect="8_5"/>
+        <case maxzoom="17" pathEffect="9_5.5"/>
+        <case minzoom="18" pathEffect="12_7"/>
+      </apply_if> -->
+      <apply color="$waterColor" onewayArrowsColor="#000000FF" />
+    </switch>
+
+
+    <!-- LINE - HIGHWAY-->
+    <switch hideRoads="false">
+
+      <!-- PATHS -->
+      <switch minzoom="11">
+        <case tag="highway" value="path" />
+        <apply_if maxzoom="13" strokeWidth="0.75:0.75" />
+        <apply_if maxzoom="14" strokeWidth="0.95:0.95" />
+        <apply_if minzoom="15" strokeWidth="1.15:1.15" />
+        <apply_if minzoom="16" strokeWidth="1.5:1.5" />
+        <apply_if minzoom="17" strokeWidth="1.75:1.75" />
+        <apply_if minzoom="18" strokeWidth="2:2" />
+        <apply_if minzoom="19" strokeWidth="2.5:2.5" />
+        <apply pathEffect="">
+          <switch>
+            <case additional="disused:highway=" />
+            <case additional="obstacle=vegetation" />
+            <!-- <case additional="trail_visibility=bad" /> -->
+            <apply minzoom="15" pathEffect="3_3" />
+            <apply minzoom="16" pathEffect="4_4" />
+            <apply minzoom="17" pathEffect="5_5" />
+            <apply minzoom="18" pathEffect="8_8" />
+          </switch>
+          <switch>
+            <case additional="dirtbike:scale=6" />
+            <case additional="smoothness=impassable" />
+            <case additional="abandoned:highway=" />
+            <!-- <case additional="trail_visibility=horrible" /> -->
+            <!-- <case additional="trail_visibility=no" /> -->
+            <apply minzoom="15" pathEffect="4_3" />
+            <apply minzoom="16" pathEffect="6_4" />
+            <apply minzoom="17" pathEffect="8_5" />
+            <apply minzoom="18" pathEffect="10_8" />
+          </switch>
+        </apply>
+        <apply
+          color="$pathStrokeColor"
+          cap="ROUND"
+          shadowRadius="0"
+        >
+          <apply_if maxzoom="12" color="$transparent" />
+          <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" />
+        </apply>
+      </switch>
+
+      <!-- PATHS -->
+      <switch minzoom="11">
+        <case tag="highway" value="footway" />
+        <case tag="highway" value="cycleway" />
+        <case tag="highway" value="bridleway" />
+        <case tag="highway" value="steps" />
+        <apply_if maxzoom="13" strokeWidth="0.75:0.75" />
+        <apply_if maxzoom="14" strokeWidth="0.95:0.95" />
+        <apply_if minzoom="15" strokeWidth="1.15:1.15" />
+        <apply_if minzoom="16" strokeWidth="1.5:1.5" />
+        <apply_if minzoom="17" strokeWidth="1.75:1.75" />
+        <apply_if minzoom="18" strokeWidth="2:2" />
+        <apply_if minzoom="19" strokeWidth="2.5:2.5" />
+        <apply
+          color="$accessPrivateColor"
+          cap="ROUND"
+          shadowRadius="0"
+        >
+          <apply_if maxzoom="12" color="$transparent" />
+          <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" />
+        </apply>
+      </switch>
+
+      <!-- MINOR ROARDS-->
+      <switch minzoom="11">
+        <case tag="highway" value="track" />
+        <case tag="highway" value="residential" />
+        <case tag="highway" value="service" />
+        <apply_if maxzoom="13" strokeWidth="1.5:1.5" />
+        <apply_if minzoom="14" strokeWidth="1.9:1.9"  />
+        <apply_if minzoom="15" strokeWidth="2.3:2.3" />
+        <apply_if minzoom="16" strokeWidth="3:3" />
+        <apply_if minzoom="17" strokeWidth="3.75:3.75" />
+        <apply_if minzoom="18" strokeWidth="4.5:4.5" />
+        <apply_if minzoom="19" strokeWidth="5.5:5.5" />
+        <apply
+          color="$pathStrokeColor"
+          cap="ROUND"
+          shadowRadius="0"
+        >
+          <apply_if maxzoom="12" color="$transparent" />
+          <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" />
+        </apply>
+      </switch>
+
+      <!-- MINOR ROARDS-->
+      <switch minzoom="11">
+        <case tag="highway" value="construction" />
+        <case tag="highway" value="living_street" />
+        <case tag="highway" value="busway" />
+        <case tag="highway" value="pedestrian" />
+        <case tag="highway" value="escape" />
+        <case tag="highway" value="raceway" />
+        <apply_if maxzoom="13" strokeWidth="1.5:1.5" />
+        <apply_if minzoom="14" strokeWidth="1.9:1.9"  />
+        <apply_if minzoom="15" strokeWidth="2.3:2.3" />
+        <apply_if minzoom="16" strokeWidth="3:3" />
+        <apply_if minzoom="17" strokeWidth="3.75:3.75" />
+        <apply_if minzoom="18" strokeWidth="4.5:4.5" />
+        <apply_if minzoom="19" strokeWidth="5.5:5.5" />
+        <apply
+          color="$accessPrivateColor"
+          cap="ROUND"
+          shadowRadius="0"
+        >
+          <apply_if maxzoom="12" color="$transparent" />
+          <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" />
+        </apply>
+      </switch>
+
+      <!-- MEDIUM ROARDS-->
+      <switch minzoom="6">
+        <case tag="highway" value="tertiary"/>
+        <case tag="highway" value="tertiary_link"/>
+        <case tag="highway" value="unclassified" />
+        <apply_if minzoom="7" strokeWidth="0.5:0.5"/>
+        <apply_if minzoom="8" strokeWidth="0.75:0.75"/>
+        <apply_if minzoom="9" strokeWidth="1:1"/>
+        <apply_if maxzoom="10" strokeWidth="1.25:1.25" />
+        <apply_if minzoom="11" strokeWidth="1.5:1.5" />
+        <apply_if minzoom="12" strokeWidth="1.75:1.75" />
+        <apply_if minzoom="13" strokeWidth="2:2" />
+        <apply_if minzoom="14" strokeWidth="2.5:2.5" />
+        <apply_if minzoom="15" strokeWidth="3.25:3.25" />
+        <apply_if minzoom="16" strokeWidth="4:4"/>
+        <apply_if minzoom="17" strokeWidth="4.75:4.75" />
+        <apply_if minzoom="18" strokeWidth="5.5:5.5"/>
+        <apply_if minzoom="19" strokeWidth="6.25:6.25" />
+        <apply_if minzoom="20" strokeWidth="7:7" />
+        <apply
+          color="$pathStrokeColor"
+          cap="ROUND"
+          shadowRadius="0"
+        >
+          <apply_if maxzoom="12" color="$blueGrey" />
+          <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" />
+        </apply>
+      </switch>
+
+      <switch minzoom="6">
+        <case tag="highway" value="motorway" />
+        <case tag="highway" value="motorway_link" />
+        <case tag="highway" value="trunk" />
+        <case tag="highway" value="trunk_link" />
+        <case tag="highway" value="primary" />
+        <case tag="highway" value="primary_link" />
+        <case tag="highway" value="secondary" />
+        <case tag="highway" value="secondary_link" />
+        <apply_if minzoom="5" strokeWidth="0.5:0.5"/>
+        <apply_if minzoom="6" strokeWidth="0.75:0.75"/>
+        <apply_if minzoom="7" strokeWidth="1:1"/>
+        <apply_if maxzoom="8" strokeWidth="1.25:1.25" />
+        <apply_if minzoom="9" strokeWidth="1.5:1.5" />
+        <apply_if minzoom="10" strokeWidth="1.75:1.75" />
+        <apply_if minzoom="11" strokeWidth="2:2" />
+        <apply_if minzoom="12" strokeWidth="2.5:2.5" />
+        <apply_if minzoom="13" strokeWidth="3.25:3.25" />
+        <apply_if minzoom="14" strokeWidth="4:4"/>
+        <apply_if minzoom="15" strokeWidth="4.75:4.75" />
+        <apply_if minzoom="16" strokeWidth="5.5:5.5"/>
+        <apply_if minzoom="17" strokeWidth="6.25:6.25" />
+        <apply_if minzoom="18" strokeWidth="7:7" />
+        <apply
+          color="$pathStrokeColor"
+          cap="ROUND"
+          shadowRadius="0"
+        >
+          <apply_if maxzoom="12" color="$blueGrey" />
+          <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" />
+        </apply>
+      </switch>
+
+    </switch>
+
+
+    <!-- LINE - CONTOUR -->
+    <switch tag="contour" value="elevation" hideContour="false">
+      <case minzoom="11" contourLines="11"/>
+      <case minzoom="12" contourLines="12"/>
+      <case minzoom="13" contourLines="13"/>
+      <case minzoom="13" contourLines=""/>
+      <case minzoom="14" contourLines="14"/>
+      <case minzoom="15" contourLines="15"/>
+      <case minzoom="16" contourLines="16"/>
+      <apply>
+        <!-- <switch>
+          <case minzoom="15" additional="contourtype=5m" color="$contourLineColor"/>
+          <case minzoom="13" additional="contourtype=20f" color="$contourLineColor"/>
+          <apply>
+            <case contourWidth="thin" strokeWidth="0.3"/>
+            <case contourWidth="medium" strokeWidth="0.6"/>
+            <case contourWidth="thick" strokeWidth="1.1"/>
+            <case strokeWidth="0.3"/>
+          </apply>
+        </switch> -->
+        <switch>
+          <case minzoom="13" additional="contourtype=10m" color="$contourLineColor"/>
+          <case minzoom="12" additional="contourtype=20m" color="$contourLineColor"/>
+          <apply>
+            <case contourWidth="thin" strokeWidth="0.6"/>
+            <case contourWidth="medium" strokeWidth="0.9"/>
+            <case contourWidth="thick" strokeWidth="1.3"/>
+            <case strokeWidth="0.5"/>
+          </apply>
+        </switch>
+        <switch minzoom="11">
+          <case additional="contourtype=50m" color="$contourLineColor"/>
+          <apply>
+            <case contourWidth="thin" strokeWidth="0.9"/>
+            <case contourWidth="medium" strokeWidth="1.3"/>
+            <case contourWidth="thick" strokeWidth="1.9"/>
+            <case strokeWidth="0.6"/>
+          </apply>
+        </switch>
+        <switch minzoom="11">
+          <case additional="contourtype=100m" color="$contourLineColor"/>
+          <apply>
+            <case contourWidth="thin" strokeWidth="1.2"/>
+            <case contourWidth="medium" strokeWidth="1.8"/>
+            <case contourWidth="thick" strokeWidth="2.6"/>
+            <case strokeWidth="1"/>
+          </apply>
+        </switch>
+      </apply>
+    </switch>
+
+    <!-- LINE - ADMIN LEVELS -->
+    <switch minzoom="2" hideBoundaries="false">
+      <case tag="admin_level" value="0"/>
+      <case tag="admin_level" value="1"/>
+      <case tag="admin_level" value="2"/>
+      <apply color="#55607d8b" strokeWidth="3:3" pathEffect="12_2" />
+    </switch>
+
+    <switch minzoom="4" hideBoundaries="false">
+      <!-- <case tag="admin_level" value="3" pathEffect="6_1"/> -->
+      <case tag="admin_level" value="4" pathEffect="6_1"/>
+      <apply color="#55607d8b" strokeWidth="2:2" />
+    </switch>
+
+    <switch hideBoundaries="false">
+      <switch>
+        <case tag="admin_level" value="5" minzoom="11" />
+        <case tag="admin_level" value="6" minzoom="11" />
+        <case tag="admin_level" value="7" minzoom="12" />
+        <case tag="admin_level" value="8" minzoom="12" />
+        <!-- <case tag="admin_level" value="9" minzoom="13" pathEffect="4_1" pathEffect_0="4_1"/>
+        <case tag="admin_level" value="10" minzoom="13" pathEffect="4_1" pathEffect_0="4_1"/> -->
+        <apply color="#AA8d6e63" strokeWidth="1:1" pathEffect="6_3_2_3_2_3" />
+        <!-- <apply color="#b39ddb" strokeWidth="1:1" /> -->
+
+      </switch>
+      <!-- <case tag="boundary" value="national_park" minzoom="7">
+        <case maxzoom="9" strokeWidth="1.5:1.5"/>
+        <case minzoom="10" strokeWidth="3:3"/>
+        <apply color="$boundaryNationalParkColor2" color_0="$boundaryNationalParkColor" strokeWidth_0="0.6" pathEffect="4_1" pathEffect_0="4_1"/>
+      </case> -->
+    </switch>
+
+    <switch hideRailway="false">
+      <switch>
+        <switch>
+          <case minzoom="7" tag="railway" value="rail"/>
+          <case minzoom="7" tag="railway" value="light_rail"/>
+          <case minzoom="12" tag="railway" value="monorail"/>
+          <case minzoom="12" tag="railway" value="subway"/>
+          <case minzoom="12" tag="railway" value="preserved"/>
+          <case minzoom="12" tag="railway" value="narrow_gauge"/>
+          <case minzoom="12" tag="railway" value="tram" />
+          <case minzoom="12" tag="railway" value="funicular" />
+        </switch>
+        <apply color_2="$accessPrivateColor" strokeWidth_2="1" pathEffect_2="8_4">
+          <switch>
+            <case maxzoom="7" strokeWidth="0.6" />
+            <case maxzoom="8" strokeWidth="0.9" />
+            <case maxzoom="12" strokeWidth="1:1" />
+            <case maxzoom="13" strokeWidth="1:2" />
+            <case minzoom="14" strokeWidth="1:2" />
+          </switch>
+        </apply>
+      </switch>
+    </switch>
+  </line>
+</renderingStyle>

@@ -1,0 +1,52 @@
+{
+   "version":1,
+   "items":[
+      {
+         "type":"PLUGIN",
+         "pluginId":"dirtbike.plugin",
+         "version" : 1,
+         "icon": {
+            "" : "@dirtbike-icon.png"
+         },
+         "image": {
+             "" :"@dirtbike-image.png"
+         },
+         "name":{
+            "":"Dirtbike"
+         },
+         "description":{
+            "":"This OsmAnd plugin includes a lightweight map style that highlights road and trail conditions for off-road motorcycles."
+         }
+      },
+      {
+         "type":"RESOURCES",
+         "pluginId":"dirtbike.plugin",
+         "file":"res"
+      },
+      {
+         "type":"FILE",
+         "pluginId":"dirtbike.plugin",
+         "subtype" : "rendering_style",
+         "file":"\/rendering\/dirtbike.render.xml"
+      },
+      {
+         "type":"SUGGESTED_DOWNLOADS",
+         "pluginId":"dirtbike.plugin",
+         "items": [
+            {
+                "scope-id" : "test-downloads",
+                "limit" : 1,
+                "search-type" : "latlon"
+            },
+            {
+               "scope-id" : "map",
+               "search-type" : "worldregion"
+            },
+            {
+               "scope-id" : "srtm_map",
+               "search-type" : "worldregion"
+            }
+         ]
+      }
+   ]
+}
