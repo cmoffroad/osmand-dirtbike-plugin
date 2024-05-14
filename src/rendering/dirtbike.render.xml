@@ -1315,6 +1315,33 @@
         </apply>
       </switch>
 
+      <switch minzoom="6">
+        <case tag="highway" value="motorway" />
+        <case tag="highway" value="motorway_link" />
+        <apply_if minzoom="5" strokeWidth="0.5:0.5"/>
+        <apply_if minzoom="6" strokeWidth="0.75:0.75"/>
+        <apply_if minzoom="7" strokeWidth="1:1"/>
+        <apply_if maxzoom="8" strokeWidth="1.25:1.25" />
+        <apply_if minzoom="9" strokeWidth="1.5:1.5" />
+        <apply_if minzoom="10" strokeWidth="1.75:1.75" />
+        <apply_if minzoom="11" strokeWidth="2:2" />
+        <apply_if minzoom="12" strokeWidth="2.5:2.5" />
+        <apply_if minzoom="13" strokeWidth="3.25:3.25" />
+        <apply_if minzoom="14" strokeWidth="4:4"/>
+        <apply_if minzoom="15" strokeWidth="4.75:4.75" />
+        <apply_if minzoom="16" strokeWidth="5.5:5.5"/>
+        <apply_if minzoom="17" strokeWidth="6.25:6.25" />
+        <apply_if minzoom="18" strokeWidth="7:7" />
+        <apply
+          color="$accessPrivateColor"
+          cap="ROUND"
+          shadowRadius="0"
+        >
+          <apply_if maxzoom="12" color="$blueGrey" />
+          <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" />
+        </apply>
+      </switch>
+
     </switch>
 
 

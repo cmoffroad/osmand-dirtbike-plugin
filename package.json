@@ -1,6 +1,6 @@
 {
   "name": "osmand-dirtbike-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This OsmAnd plugin includes a lightweight map style that highlights road and trail conditions for off-road motorcycles.",
   "scripts": {
     "dist": "node scripts/dist.js | bash"
