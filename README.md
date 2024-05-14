@@ -23,7 +23,7 @@ This OsmAnd plugin includes a lightweight map style that highlights road and tra
 
 ### First-time Plugin Installation
 
-1. From your mobile browser, download the plugin [here](https://github.com/cmoffroad/osmand-dirtbike-plugin/raw/master/dist/osmand-dirtbike-plugin.osf).
+1. From your mobile browser, download the plugin [here](https://github.com/cmoffroad/osmand-dirtbike-plugin/raw/main/dist/osmand-dirtbike-plugin.osf).
 2. Once the download is complete, click on "Open".
 3. OsmAnd will automatically open and confirm the successful addition of the plugin.
 4. Wait a few seconds for Suggested maps to appear (standard, contour lines).
@@ -39,7 +39,7 @@ This OsmAnd plugin includes a lightweight map style that highlights road and tra
 
 ### Updating the Plugin
 
-1. From your mobile browser, download the latest plugin version [here](./dist/osmand-dirtbike-plugin.osf).
+1. From your mobile browser, download the latest plugin version [here](https://github.com/cmoffroad/osmand-dirtbike-plugin/raw/main/dist/osmand-dirtbike-plugin.osf).
 2. Once the download is complete, click on "Open".
 3. OsmAnd will automatically open and confirm the successful update of the plugin.
 4. Close and re-open the application to ensure the renderer is updated.
