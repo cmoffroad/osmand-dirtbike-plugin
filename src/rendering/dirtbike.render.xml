@@ -297,13 +297,15 @@
   </renderingAttribute>
 
   <renderingAttribute name="asphaltColor">
-    <case detailedColors="true" attrColorValue="#03a9f4" />
-    <case detailedColors="false" attrColorValue="#2196f3"  />
+    <!-- <case detailedColors="true" attrColorValue="#03a9f4" />
+    <case detailedColors="false" attrColorValue="#2196f3"  /> -->
+    <case attrColorValue="#2196f3"  />
   </renderingAttribute>
 
   <renderingAttribute name="pavedColor">
-    <case detailedColors="true" attrColorValue="#1769aa" />
-    <case detailedColors="false" attrColorValue="$asphaltColor" />
+    <!-- <case detailedColors="true" attrColorValue="#1769aa" />
+    <case detailedColors="false" attrColorValue="$asphaltColor" /> -->
+    <case attrColorValue="#2196f3"  />
   </renderingAttribute>
 
   <renderingAttribute name="accessPrivateColor">
