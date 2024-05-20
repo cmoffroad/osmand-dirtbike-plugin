@@ -73,15 +73,9 @@ For enhanced outdoor exploration, consider a one-time or yearly subscription to 
   <tbody>
     <tr>
       <td><img src="https://www.gifpng.com/100x8/2196f3/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/03a9f4/?border-width=0&font-size=0" /></td>
-      <td>Excellent paved road</td>
-      <td><code>smoothness=excellent OR surface=asphalt</code></td>
-    </tr>
-    <tr>
       <td><img src="https://www.gifpng.com/100x8/2196f3/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/1769aa/?border-width=0&font-size=0" /></td>
       <td>Other paved road</td>
-      <td><code>smoothness=good OR tracktype=grade1 OR surface IN (paved, concrete, concrete:plates, concrete:lanes, paving_stones, sett, unhewn_cobblestone, metal)</code></td>
+      <td><code>smoothness IN (excellent, good) OR tracktype=grade1 OR surface IN (paved, asphalt, concrete, concrete:plates, concrete:lanes, paving_stones, sett, unhewn_cobblestone, metal)</code></td>
     </tr>
     <tr>
       <td><img src="https://www.gifpng.com/100x8/4caf50/?border-width=0&font-size=0" /></td>
