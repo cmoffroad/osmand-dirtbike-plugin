@@ -606,7 +606,7 @@
   </renderingAttribute>
   <renderingConstant name="placeTextHaloRadiusDay" value="1:1"/>
   <renderingAttribute name="placeCityVillageTextHaloColor">
-    <case attrColorValue="#ffffff"/>
+    <case attrColorValue="#88ffffff"/>
   </renderingAttribute>
 
   <order>
