@@ -17,13 +17,23 @@
 <body>
   <div id="map"></div>
   <script>
-    const map = L.map('map').setView([18.9475433, 99.0693038], 12);
-    const tiles = L.tileLayer('https://raw.githubusercontent.com/cmoffroad/osm-tiles/master/dist/tiles/{z}/{x}/{y}.png', {
-      minZoom: 11,
+    const map = L.map('map', {
+      minZoom: 10,
+      maxZoom: 15
+    })
+    .setView([18.9475433, 99.0693038], 12);
+    map.attributionControl.setPrefix('&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors');
+
+    const tiles = L.tileLayer('https://raw.githubusercontent.com/cmoffroad/osmand-tiles/master/dist/tiles/{z}/{x}/{y}.png', {
       minNativeZoom: 13,
-      maxNativeZoom: 13,
-      maxZoom: 15,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      maxNativeZoom: 13
+    }).addTo(map);
+
+    const hillshade = L.tileLayer(`https://raw.githubusercontent.com/cmoffroad/osmand-tiles/master/dist/tiles/hillshade/{z}/{x}/{y}.png`, {
+      transparent: true,
+      minNativeZoom: 12,
+      maxNativeZoom: 12,
+      opacity: 0.2
     }).addTo(map);
   </script>
 </body>
