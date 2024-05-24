@@ -33,8 +33,15 @@
       transparent: true,
       minNativeZoom: 12,
       maxNativeZoom: 12,
-      opacity: 0.2
+      opacity: 0.1
     }).addTo(map);
+
+    const slope = L.tileLayer(`https://raw.githubusercontent.com/cmoffroad/osmand-tiles/master/dist/tiles/slope/{z}/{x}/{y}.png`, {
+      transparent: true,
+      minNativeZoom: 11,
+      maxNativeZoom: 11,
+      opacity: 0.2
+    });//.addTo(map);
   </script>
 </body>
 </html>
