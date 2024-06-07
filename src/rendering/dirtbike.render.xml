@@ -488,6 +488,7 @@
       <case additional="tracktype=" />
       <case additional="mtb:scale=" />
       <case additional="motorcycle=yes" />
+      <case additional="motor_vehicle=yes" />
       <case tag="route_bicycle" value="" />
       <case tag="route_mtb" value="" />
       <case tag="osmand_mtb_scale_imba" value="trail" />
@@ -1157,7 +1158,9 @@
           <switch>
             <case additional="disused:highway=" />
             <case additional="obstacle=vegetation" />
-            <!-- <case additional="trail_visibility=bad" /> -->
+            <case additional="trail_visibility=horrible" />
+            <apply minzoom="13" pathEffect="1_1" />
+            <apply minzoom="14" pathEffect="2_2" />
             <apply minzoom="15" pathEffect="3_3" />
             <apply minzoom="16" pathEffect="4_4" />
             <apply minzoom="17" pathEffect="5_5" />
@@ -1165,10 +1168,12 @@
           </switch>
           <switch>
             <case additional="dirtbike:scale=6" />
+            <case additional="obstacle=fallen_tree" />
             <case additional="smoothness=impassable" />
             <case additional="abandoned:highway=" />
-            <!-- <case additional="trail_visibility=horrible" /> -->
-            <!-- <case additional="trail_visibility=no" /> -->
+            <case additional="trail_visibility=no" />
+            <apply minzoom="13" pathEffect="2_1" />
+            <apply minzoom="14" pathEffect="3_2" />
             <apply minzoom="15" pathEffect="4_3" />
             <apply minzoom="16" pathEffect="6_4" />
             <apply minzoom="17" pathEffect="8_5" />
