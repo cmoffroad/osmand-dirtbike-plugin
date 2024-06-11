@@ -23,6 +23,9 @@
   <renderingProperty attr="hideContour" name="Hide Contour" description=""
     type="boolean" possibleValues="" category="hide"/>
 
+  <renderingProperty attr="hideContourLabels" name="Hide Contour Labels" description=""
+    type="boolean" possibleValues="" category="hide"/>
+
   <renderingProperty attr="hideBoundaries" name="Hide Boundaries" description=""
     type="boolean" possibleValues="" category="hide"/>
 
@@ -931,7 +934,7 @@
       </switch>
 
       <!-- TEXT - CONTOUR LINES -->
-      <switch tag="contour" value="elevation" nameTag="elevation" textOnPath="false" textBold="true" textOrder="255" textHaloColor="#bbffffff" textHaloRadius="1">
+      <switch tag="contour" value="elevation" nameTag="elevation" textOnPath="false" textBold="true" textOrder="255" textHaloColor="#bbffffff" textHaloRadius="1" hideContourLabels="false">
         <case minzoom="13" contourLines="11"/>
         <case minzoom="13" contourLines="12"/>
         <case minzoom="13" contourLines="13"/>
