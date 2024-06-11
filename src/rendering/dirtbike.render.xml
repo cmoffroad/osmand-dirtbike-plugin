@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <renderingStyle name="Dirtbike by julcnx" depends="" version="1">
 
+  <!-- PROPERTY - TRACKS -->
+  <renderingProperty attr="currentTrackColor" name="Current GPX color" description="Color of the currently recording track"
+    type="string" possibleValues="red,orange,lightblue,blue,purple,translucent_red,translucent_orange,translucent_lightblue,translucent_blue,translucent_purple" defaultValueDescription="default"/>
+  <renderingProperty attr="currentTrackWidth" name="Current GPX width" description="Width of the currently recording track"
+    type="string" possibleValues="thin,medium,bold" defaultValueDescription="default"/>
+
+
   <!-- PROPERTY - CONTOUR LINES -->
   <renderingProperty attr="contourLines" name="Show contour lines" description="Select minimum zoom level to display in map if available. Separate contour file may be needed." type="string" possibleValues="disabled,16,15,14,13,12,11" defaultValueDescription="default13" category="details"/>
   <renderingProperty attr="contourColorScheme" name="Contour lines color scheme" description="Contour lines color scheme" type="string" possibleValues="brown" defaultValueDescription="default"/>
@@ -41,6 +48,50 @@
     type="boolean" possibleValues="" category="details"/>
 
   <renderingProperty attr="engine_v1" type="boolean"/>
+
+  <renderingAttribute name="gpx">
+    <switch>
+      <case currentTrackColor="red" color="#ff0000"/>
+      <case currentTrackColor="orange" color="#ff7200"/>
+      <case currentTrackColor="lightblue" color="#2ec6ff"/>
+      <case currentTrackColor="blue" color="#4e4eff"/>
+      <case currentTrackColor="purple" color="#a71de1"/>
+      <case currentTrackColor="translucent_red" color="#aaff0000"/>
+      <case currentTrackColor="translucent_orange" color="#aaff7200"/>
+      <case currentTrackColor="translucent_lightblue" color="#aa00ffff"/>
+      <case currentTrackColor="translucent_blue" color="#aa4e4eff"/>
+      <case currentTrackColor="translucent_purple" color="#aaa71de1"/>
+      <case color="#ff0000">
+        <apply_if roadStyle="germanRoadAtlas" color="#aa0088"/> <!-- does not works -->
+      </case>
+      <apply cap="ROUND">
+        <case currentTrackWidth="thin">
+          <apply_if minzoom="3" maxzoom="5" strokeWidth="1"/>
+          <apply_if minzoom="6" strokeWidth="2"/>
+          <apply_if additional="routePoints=true" pathEffect="5_4"/>
+        </case>
+        <case currentTrackWidth="medium">
+          <apply_if minzoom="3" maxzoom="5" strokeWidth="1"/>
+          <apply_if minzoom="6" maxzoom="11" strokeWidth="3"/>
+          <apply_if minzoom="12" strokeWidth="5"/>
+          <apply_if additional="routePoints=true" pathEffect="8_7"/>
+        </case>
+        <case currentTrackWidth="bold">
+          <apply_if minzoom="3" maxzoom="5" strokeWidth="1"/>
+          <apply_if minzoom="6" maxzoom="7" strokeWidth="3"/>
+          <apply_if minzoom="8" maxzoom="9" strokeWidth="5"/>
+          <apply_if minzoom="10" maxzoom="11" strokeWidth="7"/>
+          <apply_if minzoom="12" strokeWidth="11"/>
+          <apply_if additional="routePoints=true" pathEffect="8_15"/>
+        </case>
+        <case>
+          <apply_if minzoom="3" maxzoom="5" strokeWidth="1"/>
+          <apply_if minzoom="6" strokeWidth="2"/>
+          <apply_if additional="routePoints=true" pathEffect="5_4"/>
+        </case>
+      </apply>
+    </switch>
+  </renderingAttribute>
 
 
   <renderingAttribute name="osmcBlackColor">
