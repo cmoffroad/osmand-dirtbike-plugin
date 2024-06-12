@@ -4,7 +4,9 @@
 
 This OsmAnd plugin includes a lightweight map style that highlights road and trail conditions for off-road motorcycles.
 
-<img src="./src/res/dirtbike-image.png" height="300"/>
+<a href="https://cmoffroad.github.io/osmand-dirtbike-plugin/">
+  <img src="./src/res/dirtbike-image.png" height="300"/>
+</a>
 
 ### Key Features
 
