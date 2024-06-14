@@ -68,7 +68,7 @@ For enhanced outdoor exploration, consider a one-time or yearly subscription to 
   <thead>
     <tr>
       <th>Default style</th>
-      <th>Detailed colors</th>
+      <th>Detailed style</th>
       <th>Category</th>
       <th>OpenStreetMap tags</th>
   </thead>
@@ -144,7 +144,7 @@ For enhanced outdoor exploration, consider a one-time or yearly subscription to 
   <tbody>
     <tr>
       <td><img src="https://www.gifpng.com/100x15/888888/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x15/f44336/?border-width=0&font-size=0" /></td>
+      <td><img src="https://www.gifpng.com/100x15/f8bbd0/?border-width=0&font-size=0" /></td>
       <td>Major roads</td>
       <td>
         <code>highway IN (motorway, motorway_link, trunk, trunk_link, primary, primary_link, secondary, secondary_link)</code>
@@ -152,19 +152,19 @@ For enhanced outdoor exploration, consider a one-time or yearly subscription to 
     </tr>
     <tr>
       <td><img src="https://www.gifpng.com/100x12/888888/?border-width=1&border-type=rectangle&border-color=FFFFFF&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x12/f44336/?border-width=1&border-type=rectangle&border-color=FFFFFF&font-size=0" /></td>
+      <td><img src="https://www.gifpng.com/100x12/f8bbd0/?border-width=1&border-type=rectangle&border-color=FFFFFF&font-size=0" /></td>
       <td>Medium roads</td>
       <td><code>highway IN (tertiary, tertiary_link, unclassified)</code></td>
     </tr>
     <tr>
       <td><img src="https://www.gifpng.com/100x8/888888/?border-width=1&border-type=rectangle&border-color=FFFFFF&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/f44336/?border-width=1&border-type=rectangle&border-color=FFFFFF&font-size=0" /></td>
+      <td><img src="https://www.gifpng.com/100x8/f8bbd0/?border-width=1&border-type=rectangle&border-color=FFFFFF&font-size=0" /></td>
       <td>Minor roads</td>
       <td><code>highway IN (residential, service, track, construction, living_street, busway, pedestrian, escape, raceway)</code></td>
     </tr>
     <tr>
       <td><img src="https://www.gifpng.com/100x4/888888/?border-width=1&border-type=rectangle&border-color=FFFFFF&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x4/f44336/?border-width=1&border-type=rectangle&border-color=FFFFFF&font-size=0" /></td>
+      <td><img src="https://www.gifpng.com/100x4/f8bbd0/?border-width=1&border-type=rectangle&border-color=FFFFFF&font-size=0" /></td>
       <td>Paths</td>
       <td><code>highway IN (path, footway, cycleway, bridleway, steps)</code></td>
     </tr>

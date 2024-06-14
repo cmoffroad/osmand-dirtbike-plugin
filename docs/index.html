@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>osmand-dirtbike-plugin | Preview</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
+  <link rel="stylesheet" href="./lib/leaflet.css" />
+  <link rel="stylesheet" href="./lib/Control.TileLoadingProgress.css" />
+  <link rel="stylesheet" href="./lib/leaflet-contextmenu.css" />
+  <script src="./lib/leaflet.js"></script>
+  <script src="./lib/Control.TileLoadingProgress.js"></script>
+  <script src="./lib/leaflet-contextmenu.js"></script>
   <style>
     html, body, #map {
       height: 100%;
@@ -19,9 +22,34 @@
   <script>
     const map = L.map('map', {
       minZoom: 10,
-      maxZoom: 15
+      maxZoom: 15,
+      contextmenu: true,
+      contextmenuWidth: 140,
+      contextmenuItems: [
+        {
+          text: `Edit with iD`,
+          callback: (e) => {
+            const map = e.relatedTarget;
+            const params = new URLSearchParams({
+              map: [
+                Math.max(16, map.getZoom()),
+                e.latlng.lat,
+                e.latlng.lng
+              ].join('/')
+            });
+            window.open(`https://www.openstreetmap.org/edit#${unescape(params)}`);
+          }
+        },
+        '-',
+        {
+          text: 'Copy Coordinates',
+          callback: (e) => navigator.clipboard.writeText(e.latlng.lat + ',' + e.latlng.lng)
+        },
+      ]
     })
     .setView([18.9475433, 99.0693038], 12);
+
+
     map.attributionControl.setPrefix('&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors');
 
     const tiles = L.tileLayer('https://raw.githubusercontent.com/cmoffroad/osmand-tiles/master/dist/tiles/{z}/{x}/{y}.png', {
@@ -42,6 +70,8 @@
       maxNativeZoom: 11,
       opacity: 0.2
     });//.addTo(map);
+
+
   </script>
 </body>
 </html>

@@ -366,7 +366,7 @@
     <!-- <case attrColorValue="#b39ddb" /> -->
     <!-- <case attrColorValue="#f06292" /> -->
     <!-- <case attrColorValue="#a1887f" /> -->
-    <case attrColorValue="#f44336" />
+    <case attrColorValue="#f8bbd0" />
     <!-- <case attrColorValue="#ff5252" /> -->
 
   </renderingAttribute>
@@ -383,7 +383,7 @@
   </renderingAttribute>
 
   <renderingAttribute name="woodColor">
-    <case attrColorValue="#77D7E1C9"/>
+    <case attrColorValue="#33D7E1C9"/>
   </renderingAttribute>
 
   <renderingAttribute name="unknownColor">
@@ -1263,7 +1263,7 @@
           shadowRadius="0"
         >
           <apply_if maxzoom="12" color="$transparent" />
-          <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" />
+          <!-- <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" /> -->
         </apply>
       </switch>
 
@@ -1310,7 +1310,7 @@
           shadowRadius="0"
         >
           <apply_if maxzoom="12" color="$transparent" />
-          <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" />
+          <!-- <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" /> -->
         </apply>
       </switch>
 
@@ -1399,7 +1399,7 @@
           shadowRadius="0"
         >
           <apply_if maxzoom="12" color="$blueGrey" />
-          <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" />
+          <!-- <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" /> -->
         </apply>
       </switch>
 
