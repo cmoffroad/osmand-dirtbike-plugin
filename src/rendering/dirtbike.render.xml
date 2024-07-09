@@ -50,6 +50,9 @@
   <renderingProperty attr="detailedColors" name="Detailed Colors" description=""
     type="boolean" possibleValues="" category="details"/>
 
+  <renderingProperty attr="showFixme" name="Show Fixme" description=""
+    type="boolean" possibleValues="" category="details"/>
+
   <renderingProperty attr="engine_v1" type="boolean"/>
 
   <renderingAttribute name="gpx">
@@ -1134,11 +1137,12 @@
   </polygon>
 
   <line>
+
     <!-- LINE - COASTLINE -->
     <case hideLanduse="false" minzoom="1" tag="natural" value="coastline_broken" color="#111111" strokeWidth=":1"/>
     <case hideLanduse="false" minzoom="5" tag="natural" value="coastline_line" color="#4580cf" strokeWidth=":1"/>
 
-<!-- LINE - WATER -->
+    <!-- LINE - WATER -->
     <switch hideWater="false">
       <switch minzoom="12">
         <case tag="waterway" value="stream" />
@@ -1194,6 +1198,17 @@
       <apply color="$waterColor" onewayArrowsColor="#000000FF" />
     </switch>
 
+    <switch showFixme="true" minzoom="12">
+      <case tag="fixme_tag" value="yes" color="#aaffef62"/>
+      <apply>
+        <case maxzoom="14" strokeWidth="4:4"/>
+        <case maxzoom="15" strokeWidth="6:6"/>
+        <case maxzoom="16" strokeWidth="8:8"/>
+        <case maxzoom="17" strokeWidth="10:10"/>
+        <case maxzoom="18" strokeWidth="12:12"/>
+        <case minzoom="19" strokeWidth="14:14"/>
+      </apply>
+    </switch>
 
     <!-- LINE - HIGHWAY-->
     <switch hideRoads="false">
