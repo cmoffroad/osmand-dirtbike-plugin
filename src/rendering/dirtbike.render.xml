@@ -1216,6 +1216,7 @@
       <!-- PATHS -->
       <switch minzoom="11">
         <case tag="highway" value="path" />
+        <case tag="highway" value="road" />
         <apply_if maxzoom="13" strokeWidth="0.75:0.75" />
         <apply_if maxzoom="14" strokeWidth="0.95:0.95" />
         <apply_if minzoom="15" strokeWidth="1.15:1.15" />
@@ -1227,7 +1228,9 @@
           <switch>
             <case additional="disused:highway=" />
             <case additional="obstacle=vegetation" />
-            <case additional="trail_visibility=horrible" />
+            <!-- <case additional="trail_visibility=horrible" /> -->
+            <case tag="osmand_ford_stub" value="." />
+            <case tag="ford" value="yes" />
             <apply minzoom="13" pathEffect="1_1" />
             <apply minzoom="14" pathEffect="2_2" />
             <apply minzoom="15" pathEffect="3_3" />
