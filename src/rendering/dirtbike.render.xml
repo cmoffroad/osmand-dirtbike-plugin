@@ -47,9 +47,6 @@
   <renderingProperty attr="groundSurveyMode" name="Ground Survey Mode" description=""
     type="boolean" possibleValues="" category="details" defaultValue="true" />
 
-  <renderingProperty attr="detailedColors" name="Detailed Colors" description=""
-    type="boolean" possibleValues="" category="details"/>
-
   <renderingProperty attr="showFixme" name="Show Fixme" description=""
     type="boolean" possibleValues="" category="details"/>
 
@@ -357,14 +354,10 @@
   </renderingAttribute>
 
   <renderingAttribute name="asphaltColor">
-    <!-- <case detailedColors="true" attrColorValue="#03a9f4" />
-    <case detailedColors="false" attrColorValue="#2196f3"  /> -->
     <case attrColorValue="#2196f3"  />
   </renderingAttribute>
 
   <renderingAttribute name="pavedColor">
-    <!-- <case detailedColors="true" attrColorValue="#1769aa" />
-    <case detailedColors="false" attrColorValue="$asphaltColor" /> -->
     <case attrColorValue="#2196f3"  />
   </renderingAttribute>
 
@@ -409,33 +402,29 @@
   </renderingAttribute>
 
   <renderingAttribute name="noviceColor">
-    <case detailedColors="true" attrColorValue="#8bc34a" />
-    <case detailedColors="false" attrColorValue="#4caf50" />
+    <case attrColorValue="#8bc34a" />
   </renderingAttribute>
 
   <renderingAttribute name="beginnerColor">
-    <case detailedColors="true" attrColorValue="#357a38" />
-    <case detailedColors="false" attrColorValue="$noviceColor" />
+    <case attrColorValue="#357a38" />
   </renderingAttribute>
 
   <renderingAttribute name="intermediateColor">
-    <case detailedColors="true" attrColorValue="#ffab40" />
-    <case detailedColors="false" attrColorValue="#ffa726" />
+    <case attrColorValue="#ffab40" />
   </renderingAttribute>
 
   <renderingAttribute name="advancedColor">
-    <case detailedColors="true" attrColorValue="#ff6d00" />
-    <case detailedColors="false" attrColorValue="$intermediateColor" />
+    <!-- <case attrColorValue="#ff6d00" /> -->
+    <!-- <case attrColorValue="#e040fb" /> -->
+    <case attrColorValue="$red" />
   </renderingAttribute>
 
   <renderingAttribute name="hardColor">
-    <case detailedColors="true" attrColorValue="#e040fb" />
-    <case detailedColors="false" attrColorValue="#d500f9" />
+    <case attrColorValue="#e040fb" />
   </renderingAttribute>
 
   <renderingAttribute name="extremeColor">
-    <case detailedColors="true" attrColorValue="#aa00ff" />
-    <case detailedColors="false" attrColorValue="$hardColor" />
+    <case attrColorValue="#aa00ff" />
   </renderingAttribute>
 
   <!-- ATTRIBUTES -->
@@ -468,7 +457,14 @@
       <case additional="motorcycle=private" />
       <case additional="motor_vehicle=no" />
       <case additional="motor_vehicle=private" />
-      <apply attrColorValue="$accessPrivateColor" />
+      <apply attrColorValue="$accessPrivateColor">
+        <apply_if minzoom="13" pathEffect="2_1" />
+        <apply_if minzoom="14" pathEffect="3_2" />
+        <apply_if minzoom="15" pathEffect="4_3" />
+        <apply_if minzoom="16" pathEffect="6_4" />
+        <apply_if minzoom="17" pathEffect="8_5" />
+        <apply_if minzoom="18" pathEffect="10_8" />
+      </apply>
     </switch>
 
     <!-- SURVEY -->
@@ -1217,10 +1213,6 @@
     <switch hideRoads="false">
 
 
-      <switch minzoom="11" showUnknown="true">
-        <case tag="note_tag" value="yes" color="$transparent"/>
-      </switch>
-
       <!-- PATHS -->
       <switch minzoom="11">
         <case tag="" value="" showUnknown="true" />
@@ -1236,7 +1228,9 @@
           <switch>
             <case additional="disused:highway=" />
             <case additional="obstacle=vegetation" />
+            <case additional="obstacle=fallen_tree" />
             <!-- <case additional="trail_visibility=horrible" /> -->
+            <case additional="trail_visibility=no" />
             <case tag="osmand_ford_stub" value="." />
             <case tag="ford" value="yes" />
             <apply minzoom="13" pathEffect="1_1" />
@@ -1248,10 +1242,8 @@
           </switch>
           <switch>
             <case additional="dirtbike:scale=6" />
-            <case additional="obstacle=fallen_tree" />
             <case additional="smoothness=impassable" />
             <case additional="abandoned:highway=" />
-            <case additional="trail_visibility=no" />
             <apply minzoom="13" pathEffect="2_1" />
             <apply minzoom="14" pathEffect="3_2" />
             <apply minzoom="15" pathEffect="4_3" />
@@ -1289,6 +1281,12 @@
           shadowRadius="0"
         >
           <apply_if maxzoom="12" color="$transparent" />
+          <apply_if minzoom="13" pathEffect="2_1" />
+          <apply_if minzoom="14" pathEffect="3_2" />
+          <apply_if minzoom="15" pathEffect="4_3" />
+          <apply_if minzoom="16" pathEffect="6_4" />
+          <apply_if minzoom="17" pathEffect="8_5" />
+          <apply_if minzoom="18" pathEffect="10_8" />
           <!-- <apply_if additional="bridge=yes" cap="BUTT" shadowColor="$black" shadowRadius="1" /> -->
         </apply>
       </switch>
