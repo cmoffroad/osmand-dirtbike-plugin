@@ -402,29 +402,35 @@
   </renderingAttribute>
 
   <renderingAttribute name="noviceColor">
-    <case attrColorValue="#8bc34a" />
+    <!-- <case attrColorValue="#8bc34a" /> -->
+    <case attrColorValue="#32cd32" />
   </renderingAttribute>
 
   <renderingAttribute name="beginnerColor">
-    <case attrColorValue="#357a38" />
+    <!-- <case attrColorValue="#357a38" /> -->
+    <case attrColorValue="#008000" />
   </renderingAttribute>
 
   <renderingAttribute name="intermediateColor">
-    <case attrColorValue="#ffab40" />
+    <!-- <case attrColorValue="#ffab40" /> -->
+    <case attrColorValue="#ffa500" />
   </renderingAttribute>
 
   <renderingAttribute name="advancedColor">
     <!-- <case attrColorValue="#ff6d00" /> -->
     <!-- <case attrColorValue="#e040fb" /> -->
-    <case attrColorValue="$red" />
+    <!-- <case attrColorValue="$red" /> -->
+    <case attrColorValue="#ff0000" />
   </renderingAttribute>
 
   <renderingAttribute name="hardColor">
-    <case attrColorValue="#e040fb" />
+    <!-- <case attrColorValue="#e040fb" /> -->
+    <case attrColorValue="#800080" />
   </renderingAttribute>
 
   <renderingAttribute name="extremeColor">
-    <case attrColorValue="#aa00ff" />
+    <!-- <case attrColorValue="#aa00ff" /> -->
+    <case attrColorValue="#800000" />
   </renderingAttribute>
 
   <!-- ATTRIBUTES -->
@@ -473,15 +479,10 @@
       <case groundSurveyMode="true" attrColorValue="$unknownColor" />
     </apply>
 
-    <!-- ASPHALT -->
+    <!-- PAVED -->
     <switch>
       <case additional="smoothness=excellent" />
       <case additional="surface=asphalt" />
-      <apply attrColorValue="$asphaltColor" />
-    </switch>
-
-    <!-- PAVED -->
-    <switch>
       <case additional="smoothness=good" />
       <case additional="tracktype=grade1" />
       <case additional="surface=paved" />
@@ -499,9 +500,6 @@
     <!-- NOVICE -->
     <switch>
       <case additional="dirtbike:scale=0" />
-      <case additional="smoothness=good" />
-      <case additional="smoothness=intermediate" />
-      <case additional="smoothness=bad" />
       <apply attrColorValue="$noviceColor" />
     </switch>
 
@@ -541,6 +539,11 @@
     <!-- UNCLASSIFIED -->
     <switch>
       <case additional="dirtbike:scale=?" />
+      <case additional="smoothness=good" />
+      <case additional="smoothness=intermediate" />
+      <case additional="smoothness=bad" />
+      <case additional="smoothness=horrible" />
+      <case additional="smoothness=very_horrible" />
       <case additional="tracktype=" />
       <case additional="mtb:scale=" />
       <case additional="motorcycle=yes" />
@@ -552,19 +555,6 @@
       <case additional="class:bicycle=" />
       <apply attrColorValue="$unclassifiedColor" />
     </switch>
-   <!--  <apply>
-      <case tag="highway" value="path" />
-      <switch>
-        <case additional="surface=compacted" />
-        <case additional="surface=gravel" />
-        <case additional="surface=fine_gravel" />
-        <case additional="surface=unpaved" />
-        <case additional="surface=dirt" />
-        <case additional="surface=ground" />
-        <case additional="surface=mud" />
-        <apply attrColorValue="$unclassifiedColor" />
-      </switch>
-    </apply> -->
 
     <!-- UNCONFIRMED -->
     <switch>
@@ -1215,7 +1205,7 @@
 
       <!-- PATHS -->
       <switch minzoom="11">
-        <case tag="" value="" showUnknown="true" />
+        <!-- <case tag="" value="" showUnknown="true" /> -->
         <case tag="highway" value="path" />
         <apply_if maxzoom="13" strokeWidth="0.75:0.75" />
         <apply_if maxzoom="14" strokeWidth="0.95:0.95" />
@@ -1291,9 +1281,27 @@
         </apply>
       </switch>
 
-      <!-- MINOR ROARDS-->
+      <!-- UNKNOWN ROAD -->
+      <switch minzoom="11" showUnknown="true">
+        <case tag="highway" value="road" />
+        <apply_if maxzoom="13" strokeWidth="1.5:1.5" />
+        <apply_if minzoom="14" strokeWidth="1.9:1.9"  />
+        <apply_if minzoom="15" strokeWidth="2.3:2.3" />
+        <apply_if minzoom="16" strokeWidth="3:3" />
+        <apply_if minzoom="17" strokeWidth="3.75:3.75" />
+        <apply_if minzoom="18" strokeWidth="4.5:4.5" />
+        <apply_if minzoom="19" strokeWidth="5.5:5.5" />
+        <apply
+          color="$unknownColor"
+          cap="ROUND"
+          shadowRadius="0"
+        >
+          <apply_if maxzoom="12" color="$transparent" />
+        </apply>
+      </switch>
+
+      <!-- MINOR ROADS -->
       <switch minzoom="11">
-        <case tag="highway" value="road" showUnknown="true"  />
         <case tag="highway" value="track" />
         <case tag="highway" value="residential" />
         <case tag="highway" value="service" />

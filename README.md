@@ -68,64 +68,49 @@ For enhanced outdoor exploration, consider a one-time or yearly subscription to 
   <thead>
     <tr>
       <th>Default style</th>
-      <th>Detailed style</th>
       <th>Category</th>
       <th>OpenStreetMap tags</th>
   </thead>
   <tbody>
     <tr>
       <td><img src="https://www.gifpng.com/100x8/2196f3/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/2196f3/?border-width=0&font-size=0" /></td>
       <td>Other paved road</td>
       <td><code>smoothness IN (excellent, good) OR tracktype=grade1 OR surface IN (paved, asphalt, concrete, concrete:plates, concrete:lanes, paving_stones, sett, unhewn_cobblestone, metal)</code></td>
     </tr>
     <tr>
-      <td><img src="https://www.gifpng.com/100x8/4caf50/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/8bc34a/?border-width=0&font-size=0" /></td>
+      <td><img src="https://www.gifpng.com/100x8/32cd32/?border-width=0&font-size=0" /></td>
       <td>Well-maintained gravel or compacted roads</td>
       <td><code>dirtbike:scale=0 OR smoothness IN (good, intermediate, bad)</code></td>
     </tr>
     <tr>
-      <td><img src="https://www.gifpng.com/100x8/4caf50/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/357a38/?border-width=0&font-size=0" /></td>
+      <td><img src="https://www.gifpng.com/100x8/008000/?border-width=0&font-size=0" /></td>
       <td>Ungraded tracks with navigable small obstacles</td>
       <td><code>dirtbike:scale=1 OR smoothness=very_bad</code></td>
     </tr>
     <tr>
-      <td><img src="https://www.gifpng.com/100x8/ffa726/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/ffab40/?border-width=0&font-size=0" /></td>
+      <td><img src="https://www.gifpng.com/100x8/ffa500/?border-width=0&font-size=0" /></td>
       <td>Rough tracks with moderate obstacles and slopes</td>
       <td><code>dirtbike:scale=2 OR smoothness=horrible</code></td>
     </tr>
     <tr>
-      <td><img src="https://www.gifpng.com/100x8/ffa726/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/ff6d00/?border-width=0&font-size=0" /></td>
+      <td><img src="https://www.gifpng.com/100x8/ff0000/?border-width=0&font-size=0" /></td>
       <td>Challenging trails with large obstacles and steep slopes</td>
       <td><code>dirtbike:scale=3 OR smoothness=very_horrible</code></td>
     </tr>
     <tr>
-      <td><img src="https://www.gifpng.com/100x8/d500f9/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/e040fb/?border-width=0&font-size=0" /></td>
+      <td><img src="https://www.gifpng.com/100x8/800080/?border-width=0&font-size=0" /></td>
       <td>Hard Enduro trails with rugged terrain</td>
       <td><code>dirtbike:scale=4</code></td>
     </tr>
     <tr>
-      <td><img src="https://www.gifpng.com/100x8/d500f9/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/aa00ff/?border-width=0&font-size=0" /></td>
+      <td><img src="https://www.gifpng.com/100x8/800000/?border-width=0&font-size=0" /></td>
       <td>Extreme Enduro trails with unforgiving terrain</td>
       <td><code>dirtbike:scale=5</code></td>
     </tr>
     <tr>
-      <td><img src="https://www.gifpng.com/100x8/000000/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/000000/?border-width=0&font-size=0" /></td>
+      <td><img src="https://www.gifpng.com/100x8/0000000/?border-width=0&font-size=0" /></td>
       <td>Unclassified trails</td>
-      <td><code>dirtbike:scale=? OR motorcycle=yes OR tracktype OR mtb:scale </code></td>
-    </tr>
-    <tr>
-      <td><img src="https://www.gifpng.com/100x8/adadad/?border-width=0&font-size=0" /></td>
-      <td><img src="https://www.gifpng.com/100x8/adadad/?border-width=0&font-size=0" /></td>
-      <td>Unknown trails</td>
-      <td></td>
+      <td><code>dirtbike:scale=? OR motorcycle=yes OR tracktype OR mtb:scale OR smoothness!=impassable </code></td>
     </tr>
   </tbody>
 </table>
